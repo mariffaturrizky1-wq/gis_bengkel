@@ -1,0 +1,538 @@
+/* ===== LOADING ===== */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #0a2a66, #0d47a1);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255,255,255,.3);
+    border-top: 6px solid #ffd700;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ===== HERO ===== */
+.hero-premium {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    padding: 80px 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-premium h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.hero-premium p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* ===== CARD EFFECT ===== */
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+/* HERO */
+.hero-ppdb {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.hero-ppdb h2,
+.hero-ppdb h5,
+.hero-ppdb p {
+  color: #fff;
+}
+
+.hero-img {
+  max-height: 300px;
+}
+
+/* INFO BOX */
+.info-box {
+  border-radius: 12px;
+  transition: transform .2s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-4px);
+}
+
+/* ==============================
+   PPDB PREMIUM FINAL VERSION
+   ============================== */
+
+:root {
+    --gold: linear-gradient(135deg, #c9a24d, #f2d27d);
+    --gold-text: #b8963a;
+    --dark: #1f2937;
+    --soft-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+/* Wrapper khusus */
+.ppdb-pengumuman {
+    padding: 10px 5px;
+}
+
+/* CARD UMUM */
+.ppdb-pengumuman .pengumuman-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: var(--soft-shadow);
+    transition: all .35s ease;
+    overflow: hidden;
+}
+
+.ppdb-pengumuman .pengumuman-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 60px rgba(0,0,0,.12);
+}
+
+/* ==============================
+   HIGHLIGHT EMAS (PENTING)
+   ============================== */
+
+.ppdb-pengumuman .pengumuman-card.highlight {
+    position: relative;
+    background: linear-gradient(180deg, #fffdf7, #ffffff);
+    border: 1.5px solid rgba(200,160,60,.45);
+}
+
+.ppdb-pengumuman .pengumuman-card.highlight::before {
+    content: "PENTING";
+    position: absolute;
+    top: 16px;
+    right: -42px;
+    background: var(--gold);
+    color: #3a2c00;
+    padding: 6px 55px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
+/* ==============================
+   ISI CARD
+   ============================== */
+
+.pengumuman-card .card-body {
+    padding: 26px 24px;
+}
+
+/* Judul */
+.pengumuman-card h5 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Ringkasan */
+.pengumuman-card p {
+    font-size: 14.5px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* ==============================
+   BADGE KATEGORI
+   ============================== */
+
+.badge-kategori {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    background: rgba(201,162,77,.15);
+    color: var(--gold-text);
+    margin-bottom: 14px;
+}
+
+/* ==============================
+   BUTTON DETAIL
+   ============================== */
+
+.btn-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border-radius: 30px;
+    color: #3a2c00;
+    background: var(--gold);
+    border: none;
+    transition: all .3s ease;
+}
+
+.btn-detail:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(201,162,77,.45);
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+    .pengumuman-card {
+        border-radius: 16px;
+    }
+}
+
+.ppdb-premium .pengumuman-card.highlight {
+    background: linear-gradient(145deg,#fff8dc,#f6d365);
+    border: 2px solid #eab308;
+    position: relative;
+}
+
+.ppdb-premium .pengumuman-card.highlight::before {
+    content: "★ UTAMA";
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: linear-gradient(135deg,#eab308,#f59e0b);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 6px 18px rgba(234,179,8,.5);
+}
+
+.ppdb-premium .pengumuman-card {
+    transition: all .35s ease;
+}
+
+.ppdb-premium .pengumuman-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 80px rgba(0,0,0,.15);
+}
+
+/* ===============================
+   ANNOUNCEMENT BAR POLISHED
+================================ */
+
+.ppdb-announcement-bar {
+    height: 46px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(
+        90deg,
+        rgba(250,204,21,.92),
+        rgba(245,158,11,.92)
+    );
+    color: #3a2c00;
+    font-weight: 600;
+    box-shadow: 0 6px 25px rgba(0,0,0,.15);
+}
+
+.ppdb-announcement-track span {
+    white-space: nowrap;
+    padding-right: 60px;
+    font-size: 15px;
+}
+
+.ppdb-announcement-track {
+    display: flex;
+    width: max-content;
+    animation: scrollText 22s linear infinite;
+}
+
+/* Smooth Apple-like motion */
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause saat hover (opsional tapi elegan) */
+.ppdb-announcement-bar:hover .ppdb-announcement-track {
+    animation: scrollText 30s linear infinite;
+
+}
+
+/* ===============================
+   APPLE STYLE ANIMATION
+================================ */
+.animate-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp .9s cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+.animate-card:nth-child(1) { animation-delay: .1s; }
+.animate-card:nth-child(2) { animation-delay: .25s; }
+.animate-card:nth-child(3) { animation-delay: .4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+  HOVER PREMIUM
+================================ */
+.pengumuman-card {
+    border-radius: 16px;
+    transition: all .35s ease;
+}
+
+.pengumuman-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 22px 45px rgba(0,0,0,.18);
+}
+
+/* ===============================
+  FIX IKON PENGUMUMAN (ANTI NABRAK)
+================================ */
+
+.pengumuman-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;   /* PENTING: cegah ikon mengecil */
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    line-height: 1;
+
+    box-shadow: 0 6px 14px rgba(13,110,253,.25);
+}
+
+/* jaga jarak judul & meta */
+.pengumuman-card h5 {
+    margin-bottom: 4px;
+}
+
+/* =================================
+  FIX NAVBAR vs ANNOUNCEMENT BAR
+================================= */
+
+/* Navbar selalu paling atas */
+.main-header.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+}
+
+/* Announcement nempel di bawah navbar */
+.ppdb-announcement-bar {
+    position: sticky;
+    top: 56px;              /* tinggi navbar AdminLTE */
+    z-index: 1000;
+}
+
+/* Dropdown akun harus di atas semuanya */
+.dropdown-menu {
+    z-index: 1200;
+}
+
+/* ===============================
+   PENGUMUMAN DETAIL (PREMIUM)
+================================ */
+
+.pengumuman-detail {
+    animation: fadeUp .5s ease;
+}
+
+.card-pengumuman {
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.badge-pengumuman {
+    font-size: 0.85rem;
+    border-radius: 20px;
+}
+
+.judul-pengumuman {
+    font-weight: 700;
+    color: #0b2c4d;
+    line-height: 1.4;
+}
+
+.meta-pengumuman {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.meta-pengumuman i {
+    margin-right: 6px;
+}
+
+.pengumuman-isi {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.pengumuman-isi p {
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.back-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Animasi halus */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   DETAIL = VERSI BESAR CARD LIST
+================================ */
+
+.pengumuman-detail .pengumuman-card {
+    border-radius: 20px;
+}
+
+/* Judul detail lebih besar */
+.pengumuman-detail .judul-pengumuman {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.4;
+}
+
+/* Isi detail */
+.pengumuman-detail .pengumuman-isi {
+    font-size: 15.5px;
+    line-height: 1.9;
+    color: #374151;
+}
+
+.pengumuman-detail .pengumuman-isi p {
+    margin-bottom: 1.1rem;
+}
+
+/* Supaya badge tidak nutup konten */
+.pengumuman-detail .badge-kategori {
+    margin: 20px 0 0 20px;
+}
+
+/* ===============================
+ISI PENGUMUMAN - TYPOGRAPHY
+================================ */
+
+.pengumuman-isi h1,
+.pengumuman-isi h2,
+.pengumuman-isi h3 {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #0b2c4d;
+}
+
+.pengumuman-isi ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.pengumuman-isi ul li {
+    margin-bottom: .5rem;
+    line-height: 1.7;
+}
+
+.pengumuman-isi a {
+    color: #0d6efd;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.pengumuman-isi a:hover {
+    color: #0b5ed7;
+}
+
+/* ===============================
+CTA PPDB DETAIL
+================================ */
+
+.ppdb-cta {
+    margin-top: 3rem;
+    padding: 24px 28px;
+    background: linear-gradient(135deg,#0d47a1,#1976d2);
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: 18px;
+}
+
+.ppdb-cta h5,
+.ppdb-cta small {
+    color: #fff;
+}
+
+/* ===============================
+   STICKY META (DESKTOP ONLY)
+================================ */
+
+@media (min-width: 992px) {
+    .pengumuman-header {
+        position: sticky;
+        top: 90px;
+        background: #fff;
+        padding-bottom: 10px;
+        z-index: 2;
+    }
+}
+
+.pengumuman-detail .card {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+

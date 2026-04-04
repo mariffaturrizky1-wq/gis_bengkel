@@ -1,0 +1,65 @@
+/* =========================
+   SCHOOL PUBLIC THEME
+========================= */
+
+body {
+    background-color: #f4f7fb;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(135deg, #0a2a66, #1565c0) !important;
+    border-bottom: 4px solid #fbc02d;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #fbc02d !important;
+}
+
+/* BUTTON */
+.btn-primary {
+    background: linear-gradient(135deg, #1565c0, #0a2a66);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #fbc02d;
+    color: #0a2a66;
+}
+
+/* CARD */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #0a2a66, #1e88e5);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* COUNTER BOX */
+.counter-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.counter-icon {
+    width: 55px;
+    height: 55px;
+    background: #fbc02d;
+    color: #0a2a66;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}

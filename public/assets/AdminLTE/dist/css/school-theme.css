@@ -1,0 +1,95 @@
+/* =====================
+   WARNA SEKOLAH
+===================== */
+:root {
+    --school-primary: #0a2a66;
+    --school-secondary: #1e88e5;
+    --school-gold: #fbc02d;
+}
+
+/* =====================
+   NAVBAR SEKOLAH
+===================== */
+.main-header {
+    background: linear-gradient(135deg, #0a2a66, #1565c0) !important;
+    border-bottom: 4px solid #fbc02d !important;
+}
+
+.main-header h3,
+.main-header .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+
+.main-header .nav-link,
+.main-header h3 {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+.main-sidebar {
+    background: linear-gradient(
+        180deg,
+        var(--school-primary),
+        #071d3a
+    ) !important;
+}
+
+/* BRAND */
+.brand-link {
+    background: var(--school-primary) !important;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.brand-link .brand-text {
+    color: var(--school-gold) !important;
+    font-weight: bold;
+}
+
+/* =====================
+   ACTIVE MENU (EMAS)
+===================== */
+.nav-sidebar .nav-link.active {
+    background: linear-gradient(
+        135deg,
+        var(--school-gold),
+        #f9a825
+    ) !important;
+    color: #071d3a !important;
+    font-weight: bold;
+}
+
+/* HOVER */
+.nav-sidebar .nav-link:hover {
+    background: rgba(251,192,45,.2) !important;
+    color: var(--school-gold) !important;
+}
+
+/* =====================
+   CARD
+===================== */
+.card-header {
+    background: linear-gradient(
+        135deg,
+        var(--school-primary),
+        var(--school-secondary)
+    ) !important;
+    color: #fff !important;
+}
+
+/* BUTTON */
+.btn-primary {
+    background: var(--school-primary) !important;
+    border: none;
+}
+
+.btn-warning {
+    background: var(--school-gold) !important;
+    border: none;
+    color: #000 !important;
+    font-weight: bold;
+}

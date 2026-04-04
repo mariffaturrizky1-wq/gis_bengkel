@@ -1,0 +1,47 @@
+/* SIDEBAR BACKGROUND */
+.main-sidebar {
+    background: linear-gradient(180deg, #0a2a66, #071d3a);
+}
+
+/* USER PANEL */
+.user-panel .info a {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* MENU ITEM */
+.nav-sidebar .nav-item {
+    margin-bottom: 6px;
+}
+
+.nav-sidebar .nav-link {
+    border-radius: 10px;
+    color: #cfd8ff !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* ICON */
+.nav-sidebar .nav-link i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* HOVER */
+.nav-sidebar .nav-link:hover {
+    background: rgba(255, 215, 0, 0.15);
+    color: #ffd700 !important;
+    transform: translateX(5px);
+}
+
+/* ACTIVE */
+.nav-sidebar .nav-link.active {
+    background: linear-gradient(135deg, #ffd700, #ffb300);
+    color: #071d3a !important;
+    font-weight: bold;
+}
+
+/* REMOVE BLUE BOX ADMINLTE */
+.nav-pills .nav-link {
+    background: transparent;
+}
