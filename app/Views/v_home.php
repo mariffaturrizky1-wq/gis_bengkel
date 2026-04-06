@@ -24,7 +24,7 @@ var peta4 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const map = L.map('map', {
     center: [-7.2575022267624565, 109.0062579249614],
     zoom: 12,
-    layers: [peta3]
+    layers: [peta1]
 });
 
 </script>
