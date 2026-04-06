@@ -8,14 +8,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Top Navigation + Sidebar</title>
-
+  <title>GIS Bengkel | <?= $judul ?></title>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="assets/AdminLTE/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="assets/AdminLTE/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-collapse layout-top-nav">
 <div class="wrapper">
@@ -23,10 +22,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
-      <a href="<?= base_url('/') ?>" class="navbar-brand">
-      <img src="<?= base_url('assets/AdminLTE/dist/img/AdminLTELogo.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">GIS Bengkel</span>
-</a>
+      <a href="<?= base_url('AdminLTE') ?>/index3.html" class="navbar-brand">
+        <img src="<?= base_url('AdminLTE') ?>/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">GIS Bengkel</span>
+      </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -78,10 +77,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
         </ul>
+
+
       </div>
 
       <!-- Right navbar links -->
       <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+       
+        
         <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="fas fa-sign-in-alt"></i> Login
@@ -95,8 +98,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?= base_url('/') ?>" class="brand-link">
-      <img src="<?= base_url('assets/AdminLTE/dist/img/AdminLTELogo.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="<?= base_url('AdminLTE') ?>/index3.html" class="brand-link">
+      <img src="<?= base_url('AdminLTE') ?>/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -105,12 +108,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<?= base_url('assets/AdminLTE/dist/img/user2-160x160.jpg') ?>" class="img-circle elevation-2" alt="User Image">
+          <img src="<?= base_url('AdminLTE') ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
         </div>
       </div>
+
+     
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -124,8 +129,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
-            </a> 
-          </li>
+            </a>
+           
+         
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -160,11 +166,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
           <!-- /.isi konten -->
           <?php
-          if($page) {
+          if ($page) {
             echo view($page);
           }
           ?>
-          <!-- /.end isi konten -->
+          <!-- /end isi konten -->
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -176,10 +182,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
   </aside>
   <!-- /.control-sidebar -->
 
@@ -190,17 +192,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 
-<script src="<?= base_url('assets/AdminLTE/plugins/jquery/jquery.min.js') ?>"></script>
-<script src="<?= base_url('assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/AdminLTE/dist/js/adminlte.min.js') ?>"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<!-- jQuery -->
+<script src="<?= base_url('AdminLTE') ?>/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?= base_url('AdminLTE') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="<?= base_url('AdminLTE') ?>/dist/js/adminlte.min.js"></script>
+
 </body>
+
 </html>
