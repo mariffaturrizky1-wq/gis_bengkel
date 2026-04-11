@@ -19,8 +19,8 @@
             <div class="row">
                 <div class="col-sm-7">
                     <div class="form-group">
-                    <label>Nama Website</label>
-                    <input name="nama_web" class="form-control" placeholder="Nama Website">
+                    <label>Nama Bengkel</label>
+                    <input name="nama_bengkel" class="form-control" placeholder="Nama Bengkel">
                   </div>
                 </div>
                 <div class="col-sm-3">
