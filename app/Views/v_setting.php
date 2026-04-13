@@ -13,27 +13,27 @@
               <!-- /.card-header -->
               <div class="card-body">
 
-            <?php echo form_open() ?>
+            <?php echo form_open('Admin/UpdateSetting') ?>
 
              
             <div class="row">
                 <div class="col-sm-7">
                     <div class="form-group">
                     <label>Nama Bengkel</label>
-                    <input name="nama_bengkel" class="form-control" placeholder="Nama Bengkel">
+                    <input name="nama_bengkel" value="<?= $web['nama_web']?>" class="form-control" placeholder="Nama Bengkel">
                   </div>
                 </div>
                 <div class="col-sm-3">
                 <div class="form-group">
                     <label>Coordinat Wilayah</label>
-                    <input name="coordinat_wilayah" class="form-control" placeholder="Coordinat Wilayah">
+                    <input name="coordinat_wilayah" value="<?= $web['coordinat_wilayah']?>" class="form-control" placeholder="Coordinat Wilayah">
                   </div>
                 </div>
 
                 <div class="col-sm-2">
                 <div class="form-group">
                     <label>Zoom View</label>
-                    <input type="number" name="coordinat_wilayah" min="0" max="20" class="form-control" placeholder="Coordinat Wilayah">
+                    <input type="number" value="<?= $web['zoom_view']?>" name="zoom_view" min="0" max="20" class="form-control" placeholder="Coordinat Wilayah">
                   </div>
                 </div>
             </div>
@@ -73,15 +73,9 @@ var peta4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{
     attribution: '&copy; Stadia Maps'
 });
 
-	//const map = L.map('map').setView([-7.2575022267624565, 109.0062579249614], 13);
-
-	//const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	//	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	//}).addTo(map);
-
 const map = L.map('map', {
-    center: [-7.2575022267624565, 109.0062579249614],
-    zoom: 12,
+    center: [<?= $web['coordinat_wilayah']?>],
+    zoom: <?= $web['zoom_view']?>,
     layers: [peta1]
 });
 
