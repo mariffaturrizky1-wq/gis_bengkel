@@ -6,10 +6,10 @@ use App\Models\ModelSetting;
 
 class Admin extends BaseController
 {
-public function __construct() 
-{
+    public function __construct() 
+    {
     $this->ModelSetting = new ModelSetting();
-}
+    }
 
     public function index(): string
     {
@@ -39,7 +39,7 @@ public function __construct()
         'zoom_view' => $this->request->getPost('zoom_view')
         ];
         $this->ModelSetting->UpdateData($data);
-        session()->setFlashdata('pesan','Setting Web Telah DIupdate !!!');
+        session()->setFlashdata('pesan','Setting Web Telah Diupdate !!!');
         return redirect()->to('Admin/Setting');
     }
 }
