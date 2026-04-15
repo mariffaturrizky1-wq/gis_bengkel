@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 14, 2026 at 04:47 PM
--- Server version: 8.0.30
--- PHP Version: 8.5.4
+-- Waktu pembuatan: 15 Apr 2026 pada 12.35
+-- Versi server: 8.0.30
+-- Versi PHP: 8.5.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,32 +18,33 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gis_bengkel`
+-- Basis data: `gis_bengkel`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_bengkel`
+-- Struktur dari tabel `tbl_bengkel`
 --
 
 CREATE TABLE `tbl_bengkel` (
   `id_bengkel` int NOT NULL,
   `id_kategori` int DEFAULT NULL,
   `nama_bengkel` varchar(150) DEFAULT NULL,
-  `pemilik` varchar(50) DEFAULT NULL,
   `alamat` varchar(250) DEFAULT NULL,
-  `no_hp` int DEFAULT NULL,
   `jam_buka` time DEFAULT NULL,
   `jam_tutup` time DEFAULT NULL,
   `status` varchar(10) DEFAULT NULL,
-  `coordinat` varchar(150) DEFAULT NULL
+  `coordinat` varchar(150) DEFAULT NULL,
+  `id_provinsi` int DEFAULT NULL,
+  `id_kabupaten` int DEFAULT NULL,
+  `id_kecamatan` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_kabupaten`
+-- Struktur dari tabel `tbl_kabupaten`
 --
 
 CREATE TABLE `tbl_kabupaten` (
@@ -53,7 +54,7 @@ CREATE TABLE `tbl_kabupaten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data for table `tbl_kabupaten`
+-- Dumping data untuk tabel `tbl_kabupaten`
 --
 
 INSERT INTO `tbl_kabupaten` (`id_kabupaten`, `id_provinsi`, `nama_kabupaten`) VALUES
@@ -575,7 +576,7 @@ INSERT INTO `tbl_kabupaten` (`id_kabupaten`, `id_provinsi`, `nama_kabupaten`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_kategori`
+-- Struktur dari tabel `tbl_kategori`
 --
 
 CREATE TABLE `tbl_kategori` (
@@ -587,7 +588,7 @@ CREATE TABLE `tbl_kategori` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_kecamatan`
+-- Struktur dari tabel `tbl_kecamatan`
 --
 
 CREATE TABLE `tbl_kecamatan` (
@@ -597,7 +598,7 @@ CREATE TABLE `tbl_kecamatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data for table `tbl_kecamatan`
+-- Dumping data untuk tabel `tbl_kecamatan`
 --
 
 INSERT INTO `tbl_kecamatan` (`id_kecamatan`, `id_kabupaten`, `nama_kecamatan`) VALUES
@@ -7651,7 +7652,7 @@ INSERT INTO `tbl_kecamatan` (`id_kecamatan`, `id_kabupaten`, `nama_kecamatan`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_provinsi`
+-- Struktur dari tabel `tbl_provinsi`
 --
 
 CREATE TABLE `tbl_provinsi` (
@@ -7660,7 +7661,7 @@ CREATE TABLE `tbl_provinsi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data for table `tbl_provinsi`
+-- Dumping data untuk tabel `tbl_provinsi`
 --
 
 INSERT INTO `tbl_provinsi` (`id_provinsi`, `nama_provinsi`) VALUES
@@ -7702,7 +7703,7 @@ INSERT INTO `tbl_provinsi` (`id_provinsi`, `nama_provinsi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_setting`
+-- Struktur dari tabel `tbl_setting`
 --
 
 CREATE TABLE `tbl_setting` (
@@ -7713,16 +7714,16 @@ CREATE TABLE `tbl_setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tbl_setting`
+-- Dumping data untuk tabel `tbl_setting`
 --
 
 INSERT INTO `tbl_setting` (`id`, `nama_web`, `coordinat_wilayah`, `zoom_view`) VALUES
-(1, 'WEB GIS BENGKEL KOTA BUMIAYU', '-7.606167081523246, 108.75467128064672', 15);
+(1, 'WEB GIS BENGKEL KOTA BUMIAYU', '-7.274979596539466, 109.01168296060514', 11);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Struktur dari tabel `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -7735,102 +7736,111 @@ CREATE TABLE `tbl_user` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_wilayah`
+-- Struktur dari tabel `tbl_wilayah`
 --
 
 CREATE TABLE `tbl_wilayah` (
   `id_wilayah` int NOT NULL,
   `nama_wilayah` varchar(150) DEFAULT NULL,
-  `geojson` text
+  `geojson` text,
+  `warna` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Indexes for dumped tables
+-- Dumping data untuk tabel `tbl_wilayah`
+--
+
+INSERT INTO `tbl_wilayah` (`id_wilayah`, `nama_wilayah`, `geojson`, `warna`) VALUES
+(1, 'Kecamatan Bumiayu', '{\"type\":\"FeatureCollection\", \"features\": [\r\n{\"type\":\"Feature\",\"geometry\":{\"type\":\"MultiPolygon\",\"coordinates\":[[[[108.9669,-7.2723],[108.9697,-7.2737],[108.9693,-7.275],[108.9709,-7.2752],[108.9697,-7.2765],[108.9735,-7.2792],[108.9715,-7.2804],[108.9739,-7.2805],[108.9732,-7.2835],[108.9752,-7.2838],[108.9745,-7.2857],[108.9761,-7.2861],[108.9778,-7.2903],[108.9769,-7.2925],[108.9788,-7.2924],[108.9758,-7.2969],[108.977,-7.2982],[108.9788,-7.2975],[108.9778,-7.3],[108.9803,-7.3004],[108.9779,-7.3021],[108.9776,-7.3042],[108.9916,-7.3082],[108.9987,-7.3067],[109.0012,-7.3096],[109.0027,-7.3062],[109.0074,-7.3038],[109.0025,-7.2943],[109.0052,-7.2878],[109.0051,-7.2826],[109.0029,-7.2785],[109.0134,-7.2684],[109.0188,-7.2698],[109.0282,-7.2761],[109.0355,-7.2756],[109.0378,-7.2712],[109.036,-7.269],[109.0393,-7.2655],[109.0416,-7.2533],[109.0387,-7.2508],[109.0347,-7.2503],[109.035,-7.2456],[109.0371,-7.2442],[109.038,-7.2397],[109.0472,-7.239],[109.0469,-7.2306],[109.0435,-7.2254],[109.0394,-7.2286],[109.0332,-7.2278],[109.0214,-7.22],[109.0181,-7.2195],[109.0147,-7.222],[109.0136,-7.2279],[109.0075,-7.2321],[109.0065,-7.2346],[109.0032,-7.233],[109,-7.2383],[108.9883,-7.2408],[108.9882,-7.2385],[108.9909,-7.2357],[108.9891,-7.2212],[108.9872,-7.2177],[108.9834,-7.2151],[108.9803,-7.2025],[108.975,-7.1993],[108.9712,-7.1935],[108.9672,-7.1924],[108.9669,-7.19],[108.9623,-7.1891],[108.9597,-7.1902],[108.9577,-7.1876],[108.9547,-7.1889],[108.9497,-7.1879],[108.9425,-7.1916],[108.9372,-7.1999],[108.9289,-7.2067],[108.9326,-7.2103],[108.9255,-7.2142],[108.9267,-7.2203],[108.933,-7.2212],[108.9342,-7.2252],[108.94,-7.2328],[108.9408,-7.2377],[108.9483,-7.2413],[108.9525,-7.2381],[108.9579,-7.2416],[108.9594,-7.2466],[108.9534,-7.2454],[108.953,-7.2469],[108.9577,-7.2496],[108.9567,-7.2522],[108.9608,-7.2577],[108.9595,-7.2629],[108.962,-7.2637],[108.9633,-7.2694],[108.9672,-7.2696],[108.9669,-7.2723]]],[[[108.97213333333336,-7.191233333333317],[108.9714,-7.1916],[108.9702,-7.1925],[108.97213333333336,-7.191233333333317]]],[[[108.97213333333336,-7.191233333333317],[108.9724,-7.1911],[108.9731,-7.1906],[108.97213333333336,-7.191233333333317]]]]},\"properties\":{\"NAME_3\":\"Bumiayu\"}}\r\n]}', '#100585'),
+(3, 'Kecamatan Paguyangan', '{\"type\":\"FeatureCollection\", \"features\": [\r\n{\"type\":\"Feature\",\"geometry\":{\"type\":\"MultiPolygon\",\"coordinates\":[[[[108.9877,-7.3335],[108.9983,-7.3342],[109.0176,-7.335],[109.0239,-7.3322],[109.0259,-7.3266],[109.0286,-7.3264],[109.0365,-7.3428],[109.0307,-7.3495],[109.0362,-7.3515],[109.0474,-7.3388],[109.0568,-7.3402],[109.0645,-7.3386],[109.0688,-7.3322],[109.0757,-7.3142],[109.0839,-7.3047],[109.1046,-7.3025],[109.1077,-7.2963],[109.1139,-7.2948],[109.1143,-7.2923],[109.106,-7.2897],[109.1057,-7.2873],[109.1171,-7.2852],[109.1272,-7.281],[109.1258,-7.2786],[109.1177,-7.2786],[109.1164,-7.2774],[109.1171,-7.2751],[109.1249,-7.2729],[109.1304,-7.2765],[109.1353,-7.2679],[109.1428,-7.2683],[109.1475,-7.2665],[109.1572,-7.2675],[109.1644,-7.2714],[109.167,-7.2678],[109.1589,-7.2563],[109.1509,-7.2505],[109.141,-7.2557],[109.132,-7.2551],[109.1273,-7.2575],[109.1236,-7.2602],[109.1244,-7.2628],[109.1221,-7.2654],[109.1158,-7.2657],[109.1065,-7.2699],[109.1015,-7.2677],[109.0983,-7.2682],[109.0892,-7.2613],[109.0883,-7.253],[109.0863,-7.2488],[109.0743,-7.2466],[109.0688,-7.2398],[109.0562,-7.2421],[109.0472,-7.2364],[109.0472,-7.239],[109.0456,-7.2396],[109.038,-7.2397],[109.0346,-7.2501],[109.0395,-7.2512],[109.0415,-7.2543],[109.0396,-7.2586],[109.0393,-7.2655],[109.036,-7.269],[109.0378,-7.2712],[109.0357,-7.2753],[109.0282,-7.2761],[109.0188,-7.2698],[109.0134,-7.2684],[109.007,-7.2734],[109.0028,-7.2788],[109.0051,-7.2826],[109.0052,-7.2878],[109.0024,-7.2936],[109.0072,-7.3043],[109.0027,-7.3062],[109.0012,-7.3096],[108.9987,-7.3067],[108.9916,-7.3082],[108.9851,-7.3062],[108.983,-7.3215],[108.9749,-7.331],[108.9756,-7.3349],[108.9771,-7.3334],[108.9783,-7.335],[108.9838,-7.333],[108.9841,-7.3348],[108.9877,-7.3335]]],[[[109.0469,-7.2306],[109.0465,-7.2352],[109.0472,-7.2364],[109.0483,-7.2271],[109.0517,-7.2265],[109.0494,-7.2257],[109.048,-7.2224],[109.0403,-7.2264],[109.0314,-7.227],[109.0393,-7.2286],[109.0435,-7.2254],[109.0469,-7.2306]]]]},\"properties\":{\"GID_3\":\"IDN.10.6.11_1\",\"GID_0\":\"IDN\",\"COUNTRY\":\"Indonesia\",\"GID_1\":\"IDN.10_1\",\"NAME_1\":\"JawaTengah\",\"NL_NAME_1\":\"NA\",\"GID_2\":\"IDN.10.6_1\",\"NAME_2\":\"Brebes\",\"NL_NAME_2\":\"NA\",\"NAME_3\":\"Paguyangan\",\"VARNAME_3\":\"NA\",\"NL_NAME_3\":\"NA\",\"TYPE_3\":\"Kecamatan\",\"ENGTYPE_3\":\"Sub-district\",\"CC_3\":\"3329040\",\"HASC_3\":\"NA\"}}\r\n]}', '#e81515');
+
+--
+-- Indeks untuk tabel yang dibuang
 --
 
 --
--- Indexes for table `tbl_bengkel`
+-- Indeks untuk tabel `tbl_bengkel`
 --
 ALTER TABLE `tbl_bengkel`
   ADD PRIMARY KEY (`id_bengkel`);
 
 --
--- Indexes for table `tbl_kabupaten`
+-- Indeks untuk tabel `tbl_kabupaten`
 --
 ALTER TABLE `tbl_kabupaten`
   ADD PRIMARY KEY (`id_kabupaten`) USING BTREE,
   ADD KEY `regencies_province_id_index` (`id_provinsi`) USING BTREE;
 
 --
--- Indexes for table `tbl_kategori`
+-- Indeks untuk tabel `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indexes for table `tbl_kecamatan`
+-- Indeks untuk tabel `tbl_kecamatan`
 --
 ALTER TABLE `tbl_kecamatan`
   ADD PRIMARY KEY (`id_kecamatan`) USING BTREE,
   ADD KEY `districts_regency_id_index` (`id_kabupaten`) USING BTREE;
 
 --
--- Indexes for table `tbl_provinsi`
+-- Indeks untuk tabel `tbl_provinsi`
 --
 ALTER TABLE `tbl_provinsi`
   ADD PRIMARY KEY (`id_provinsi`) USING BTREE;
 
 --
--- Indexes for table `tbl_setting`
+-- Indeks untuk tabel `tbl_setting`
 --
 ALTER TABLE `tbl_setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_user`
+-- Indeks untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indexes for table `tbl_wilayah`
+-- Indeks untuk tabel `tbl_wilayah`
 --
 ALTER TABLE `tbl_wilayah`
   ADD PRIMARY KEY (`id_wilayah`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_bengkel`
+-- AUTO_INCREMENT untuk tabel `tbl_bengkel`
 --
 ALTER TABLE `tbl_bengkel`
   MODIFY `id_bengkel` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbl_kategori`
+-- AUTO_INCREMENT untuk tabel `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbl_setting`
+-- AUTO_INCREMENT untuk tabel `tbl_setting`
 --
 ALTER TABLE `tbl_setting`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id_user` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbl_wilayah`
+-- AUTO_INCREMENT untuk tabel `tbl_wilayah`
 --
 ALTER TABLE `tbl_wilayah`
-  MODIFY `id_wilayah` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_wilayah` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

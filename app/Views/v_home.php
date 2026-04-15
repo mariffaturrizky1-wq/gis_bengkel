@@ -23,8 +23,8 @@ var peta4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{
 	//}).addTo(map);
 
 const map = L.map('map', {
-    center: [-7.2575022267624565, 109.0062579249614],
-    zoom: 12,
+    center: [-7.274979596539466, 109.01168296060514],
+    zoom: 11,
     layers: [peta1]
 });
 
