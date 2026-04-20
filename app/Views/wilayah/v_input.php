@@ -6,6 +6,11 @@
 
         <div class="card-body">
 
+            <?php
+            session();
+            $validation = \Config\Services::validation();
+            ?>
+
             <?php echo form_open('Wilayah/InsertData') ?>
         
             <div class="row">
@@ -13,6 +18,7 @@
                     <div class="form-group">
                         <label>Nama Wilayah</label>
                         <input name="nama_wilayah" class="form-control">
+                        <p class="text-danger"><?= $validation->hasError('nama_wilayah') ? $validation->getError('nama_wilayah') : '' ?></p>
                     </div>
                 </div>
 
@@ -26,7 +32,7 @@
 
             <div class="form-group">
                 <label>GeoJSON</label>
-                <textarea name="grojson" class="form-control" rows="15"></textarea>
+                <textarea name="geojson" class="form-control" rows="15"></textarea>
             </div>
 
             <button class="btn btn-primary btn_flat" type="submit">Simpan</button>
