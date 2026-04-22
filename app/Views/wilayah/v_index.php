@@ -9,10 +9,19 @@
                 </a>
                 </div>
                 <!-- /.card-tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+            <?php
+            if (session()->getFlashdata('insert')){
+                echo ' <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i> Alert!</h5>';
+                echo (session()->getFlashdata('insert'));
+                echo '</div>';
+              }
+
+            ?>
                 <table id="example2" class="table table-bordered table-striped">
                     <thead>
                         <tr class="text-center">

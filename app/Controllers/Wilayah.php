@@ -59,11 +59,18 @@ Class Wilayah extends BaseController
                 ]
             ],
         ])) {
-            # code...
+            // jika validasi berhasil
+            $data = [
+                'nama_wilayah' => $this->request->getPost('nama_wilayah'),
+                'warna' => $this->request->getPost('warna'),
+                'geojson' => $this->request->getPost('geojson'),
+            ];
+            $this->ModelWilayah->InsertData($data);
+            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan !!');
+            return redirect()->to('Wilayah');
         } else {
             // jika validasi gagal
-            session()->setFlashdata('errors',\Config\Services::validation()->getErrors());
-            return redirect()->to('Wilayah/Input')->withInput('validations',\Config\Services::validation());
+            return redirect()->back()->withInput()->with('validation', $this->validator);
         }
     }
 }
