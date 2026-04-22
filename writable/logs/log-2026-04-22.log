@@ -873,3 +873,887 @@ WARNING - 2026-04-22 16:26:53 --> [DEPRECATED] Creation of dynamic property App\
  5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2026-04-22 16:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:44:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin::$ModelSetting is deprecated in APPPATH\Controllers\Admin.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:44:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin::$ModelSetting is deprecated in APPPATH\Controllers\Admin.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:44:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:44:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:47:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:47:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:48:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:48:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:48:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:48:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:50:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:50:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 16:56:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 16:56:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 16:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:02:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:02:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-22 17:02:36 --> ErrorException: Undefined variable $id_wilayah
+[Method: GET, Route: Wilayah/Edit/1]
+in APPPATH\Models\ModelWilayah.php on line 23.
+ 1 APPPATH\Models\ModelWilayah.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_wilayah', 'C:\\laragon\\www\\gis_bengkel\\app\\Models\\ModelWilayah.php', 23)
+ 2 APPPATH\Controllers\Wilayah.php(82): App\Models\ModelWilayah->DetailData('1')
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Wilayah->Edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wilayah))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-22 17:03:15 --> ParseError: syntax error, unexpected token "->"
+[Method: GET, Route: Wilayah/Edit/1]
+in APPPATH\Models\ModelWilayah.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\gis_bengkel\\app\\Models\\ModelWilayah.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelWilayah')
+ 3 APPPATH\Controllers\Wilayah.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelWilayah')
+ 4 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:04:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:04:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:06:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:06:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:10:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:10:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:19:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:19:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:20:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:20:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:20:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:20:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:23:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:23:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:23:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:23:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:23:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:23:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:23:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:23:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:24:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:24:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:24:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:24:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:24:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:24:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:30:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:30:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:30:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:30:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:31:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:31:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:31:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:31:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:34:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:34:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:34:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:34:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:34:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:34:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:35:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:35:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:35:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:35:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:35:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:35:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:35:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:35:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:36:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:36:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:38:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin::$ModelSetting is deprecated in APPPATH\Controllers\Admin.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:39:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:39:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:39:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:39:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:39:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:39:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:39:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:39:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:40:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:40:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:45:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:45:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:53:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:53:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:53:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:53:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:53:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:53:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:53:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:53:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-04-22 17:54:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelWilayah is deprecated in APPPATH\Controllers\Wilayah.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-22 17:54:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Wilayah::$ModelSetting is deprecated in APPPATH\Controllers\Wilayah.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(921): App\Controllers\Wilayah->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-22 17:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
