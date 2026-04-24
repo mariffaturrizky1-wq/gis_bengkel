@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 23 Apr 2026 pada 06.04
--- Versi server: 8.0.30
--- Versi PHP: 8.5.4
+-- Generation Time: Apr 24, 2026 at 04:40 PM
+-- Server version: 8.0.30
+-- PHP Version: 8.5.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Basis data: `gis_bengkel`
+-- Database: `gis_bengkel`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_bengkel`
+-- Table structure for table `tbl_bengkel`
 --
 
 CREATE TABLE `tbl_bengkel` (
@@ -44,7 +44,7 @@ CREATE TABLE `tbl_bengkel` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_kabupaten`
+-- Table structure for table `tbl_kabupaten`
 --
 
 CREATE TABLE `tbl_kabupaten` (
@@ -54,7 +54,7 @@ CREATE TABLE `tbl_kabupaten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data untuk tabel `tbl_kabupaten`
+-- Dumping data for table `tbl_kabupaten`
 --
 
 INSERT INTO `tbl_kabupaten` (`id_kabupaten`, `id_provinsi`, `nama_kabupaten`) VALUES
@@ -576,7 +576,7 @@ INSERT INTO `tbl_kabupaten` (`id_kabupaten`, `id_provinsi`, `nama_kabupaten`) VA
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_kategori`
+-- Table structure for table `tbl_kategori`
 --
 
 CREATE TABLE `tbl_kategori` (
@@ -585,10 +585,18 @@ CREATE TABLE `tbl_kategori` (
   `marker` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `tbl_kategori`
+--
+
+INSERT INTO `tbl_kategori` (`id_kategori`, `kategori`, `marker`) VALUES
+(1, 'MOTOR', 'motor.png'),
+(2, 'MOBIL', 'mobil.png');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_kecamatan`
+-- Table structure for table `tbl_kecamatan`
 --
 
 CREATE TABLE `tbl_kecamatan` (
@@ -598,7 +606,7 @@ CREATE TABLE `tbl_kecamatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data untuk tabel `tbl_kecamatan`
+-- Dumping data for table `tbl_kecamatan`
 --
 
 INSERT INTO `tbl_kecamatan` (`id_kecamatan`, `id_kabupaten`, `nama_kecamatan`) VALUES
@@ -7652,7 +7660,7 @@ INSERT INTO `tbl_kecamatan` (`id_kecamatan`, `id_kabupaten`, `nama_kecamatan`) V
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_provinsi`
+-- Table structure for table `tbl_provinsi`
 --
 
 CREATE TABLE `tbl_provinsi` (
@@ -7661,7 +7669,7 @@ CREATE TABLE `tbl_provinsi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data untuk tabel `tbl_provinsi`
+-- Dumping data for table `tbl_provinsi`
 --
 
 INSERT INTO `tbl_provinsi` (`id_provinsi`, `nama_provinsi`) VALUES
@@ -7703,7 +7711,7 @@ INSERT INTO `tbl_provinsi` (`id_provinsi`, `nama_provinsi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_setting`
+-- Table structure for table `tbl_setting`
 --
 
 CREATE TABLE `tbl_setting` (
@@ -7714,7 +7722,7 @@ CREATE TABLE `tbl_setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data untuk tabel `tbl_setting`
+-- Dumping data for table `tbl_setting`
 --
 
 INSERT INTO `tbl_setting` (`id`, `nama_web`, `coordinat_wilayah`, `zoom_view`) VALUES
@@ -7723,7 +7731,7 @@ INSERT INTO `tbl_setting` (`id`, `nama_web`, `coordinat_wilayah`, `zoom_view`) V
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_user`
+-- Table structure for table `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -7736,7 +7744,7 @@ CREATE TABLE `tbl_user` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_wilayah`
+-- Table structure for table `tbl_wilayah`
 --
 
 CREATE TABLE `tbl_wilayah` (
@@ -7747,7 +7755,7 @@ CREATE TABLE `tbl_wilayah` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data untuk tabel `tbl_wilayah`
+-- Dumping data for table `tbl_wilayah`
 --
 
 INSERT INTO `tbl_wilayah` (`id_wilayah`, `nama_wilayah`, `geojson`, `warna`) VALUES
@@ -7759,89 +7767,89 @@ INSERT INTO `tbl_wilayah` (`id_wilayah`, `nama_wilayah`, `geojson`, `warna`) VAL
 (9, 'Kecamatan Sirampog', '{\"type\":\"FeatureCollection\", \"features\": [\r\n{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[109.1589,-7.2563],[109.1611,-7.2607],[109.1624,-7.2621],[109.1653,-7.2567],[109.1653,-7.2487],[109.1747,-7.2503],[109.1755,-7.2398],[109.1684,-7.2397],[109.1575,-7.2442],[109.1566,-7.2464],[109.1496,-7.2462],[109.1389,-7.2387],[109.1361,-7.2329],[109.1321,-7.2315],[109.1282,-7.2269],[109.1204,-7.2224],[109.1166,-7.2155],[109.1133,-7.2131],[109.1114,-7.2129],[109.1103,-7.2151],[109.1077,-7.2126],[109.0941,-7.215],[109.0803,-7.215],[109.0786,-7.2123],[109.0775,-7.2009],[109.0679,-7.1966],[109.0652,-7.1969],[109.0594,-7.1935],[109.0573,-7.1897],[109.0485,-7.1904],[109.0379,-7.1965],[109.0334,-7.202],[109.0333,-7.2074],[109.0302,-7.2118],[109.0231,-7.2123],[109.02,-7.2102],[109.0163,-7.2176],[109.0261,-7.2227],[109.0309,-7.227],[109.0403,-7.2264],[109.048,-7.2224],[109.0494,-7.2257],[109.0517,-7.2265],[109.0483,-7.2271],[109.0472,-7.2364],[109.0562,-7.2421],[109.0688,-7.2398],[109.0743,-7.2466],[109.0861,-7.2487],[109.0883,-7.253],[109.0892,-7.2613],[109.0983,-7.2682],[109.1015,-7.2677],[109.1065,-7.2699],[109.1158,-7.2657],[109.1221,-7.2654],[109.1244,-7.2628],[109.1236,-7.2602],[109.1273,-7.2575],[109.132,-7.2551],[109.141,-7.2557],[109.1506,-7.2506],[109.1589,-7.2563]]]},\"properties\":{\"GID_3\":\"IDN.10.6.13_1\",\"GID_0\":\"IDN\",\"COUNTRY\":\"Indonesia\",\"GID_1\":\"IDN.10_1\",\"NAME_1\":\"JawaTengah\",\"NL_NAME_1\":\"NA\",\"GID_2\":\"IDN.10.6_1\",\"NAME_2\":\"Brebes\",\"NL_NAME_2\":\"NA\",\"NAME_3\":\"Sirampog\",\"VARNAME_3\":\"NA\",\"NL_NAME_3\":\"NA\",\"TYPE_3\":\"Kecamatan\",\"ENGTYPE_3\":\"Sub-district\",\"CC_3\":\"3329050\",\"HASC_3\":\"NA\"}}\r\n]}', '#00FFEF');
 
 --
--- Indeks untuk tabel yang dibuang
+-- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tbl_bengkel`
+-- Indexes for table `tbl_bengkel`
 --
 ALTER TABLE `tbl_bengkel`
   ADD PRIMARY KEY (`id_bengkel`);
 
 --
--- Indeks untuk tabel `tbl_kabupaten`
+-- Indexes for table `tbl_kabupaten`
 --
 ALTER TABLE `tbl_kabupaten`
   ADD PRIMARY KEY (`id_kabupaten`) USING BTREE,
   ADD KEY `regencies_province_id_index` (`id_provinsi`) USING BTREE;
 
 --
--- Indeks untuk tabel `tbl_kategori`
+-- Indexes for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `tbl_kecamatan`
+-- Indexes for table `tbl_kecamatan`
 --
 ALTER TABLE `tbl_kecamatan`
   ADD PRIMARY KEY (`id_kecamatan`) USING BTREE,
   ADD KEY `districts_regency_id_index` (`id_kabupaten`) USING BTREE;
 
 --
--- Indeks untuk tabel `tbl_provinsi`
+-- Indexes for table `tbl_provinsi`
 --
 ALTER TABLE `tbl_provinsi`
   ADD PRIMARY KEY (`id_provinsi`) USING BTREE;
 
 --
--- Indeks untuk tabel `tbl_setting`
+-- Indexes for table `tbl_setting`
 --
 ALTER TABLE `tbl_setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `tbl_user`
+-- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indeks untuk tabel `tbl_wilayah`
+-- Indexes for table `tbl_wilayah`
 --
 ALTER TABLE `tbl_wilayah`
   ADD PRIMARY KEY (`id_wilayah`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_bengkel`
+-- AUTO_INCREMENT for table `tbl_bengkel`
 --
 ALTER TABLE `tbl_bengkel`
   MODIFY `id_bengkel` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_kategori`
+-- AUTO_INCREMENT for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
-  MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_setting`
+-- AUTO_INCREMENT for table `tbl_setting`
 --
 ALTER TABLE `tbl_setting`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_user`
+-- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id_user` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_wilayah`
+-- AUTO_INCREMENT for table `tbl_wilayah`
 --
 ALTER TABLE `tbl_wilayah`
   MODIFY `id_wilayah` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
