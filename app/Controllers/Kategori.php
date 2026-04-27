@@ -21,4 +21,20 @@ class Kategori extends BaseController
         ];
         return view('v_template_back_end', $data);
     }
+
+    public function UpdateData($id_kategori)
+    {
+        $marker = $this->request->getFile('marker');
+        $name_file = $marker->getRandomName();
+        $data = [
+            'id_kategori' => $id_kategori,
+            'marker' => $name_file,
+        ];
+        $marker->move('marker', $name_file);
+        $this->ModelKategori->UpdateData($data);
+        session()->setFlashdata('Update', 'Marker Berhasil Di Update !!');
+            return redirect()->to('Kategori');
+
+
+    }
 }

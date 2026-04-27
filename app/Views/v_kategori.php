@@ -53,7 +53,7 @@
                             <td class="text-center"><?= $value['kategori'] ?></td>
                             <td class="text-center"><img src="<?= base_url('marker/' . $value['marker']) ?>" width="75px"></td>
                             <td class="text-center">
-                                <button class="btn btn-sm btn-warning btn-flat"><i class="fas fa-map-marker-alt"></i> Ganti Marker </button>
+                                <button data-toggle="modal" data-target="#edit<?= $value['id_kategori']?>" class="btn btn-sm btn-warning btn-flat"><i class="fas fa-map-marker-alt"></i> Ganti Marker </button>
                             </td>
                         </tr>
                         <?php    } ?>
@@ -65,3 +65,35 @@
             </div>
             <!-- /.card -->
           </div>
+
+<?php  foreach ($kategori as $key => $value) { ?>
+    <div class="modal fade" id="edit<?= $value['id_kategori'] ?>">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Ganti Marker <?= ' ' . $value['kategori'] ?></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <?php echo form_open_multipart('Kategori/UpdateData/' . $value['id_kategori'])?>
+            <div class="modal-body">
+
+            <div class="form-group">
+                <label>Upload Marker</label>
+                <input type="file" name="marker" class="form-control" accept="image/png" required>
+            </div>
+          
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+
+           <?php echo form_close() ?>
+          </div>
+        <!-- /.modal-content -->
+        </div>
+    </div>
+
+<?php } ?>
