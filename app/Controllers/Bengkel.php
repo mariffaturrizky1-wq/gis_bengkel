@@ -27,5 +27,14 @@ class Bengkel extends BaseController
         return view('v_template_back_end', $data);
     }
 
-
+    public function Input()
+    {
+        $data = [
+            'judul' => 'Input Bengkel',
+            'menu' => 'bengkel',
+            'page' => 'Bengkel/v_input',
+            'web' => $this->ModelSetting->DataWeb(),
+        ];
+        return view('v_template_back_end', $data);
+    }
 }

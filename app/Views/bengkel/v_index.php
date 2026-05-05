@@ -46,11 +46,12 @@
                         <tr class="text-center">
                             <th width="50px">No</th>
                             <th>Nama Bengkel</th>
-                            <th width="120px">Status</th>
+                            <th width="100px">Kategori</th>
                             <th>Alamat</th>
                             <th style="white-space: nowrap;">Jam Buka</th>
                             <th style="white-space: nowrap;">Jam Tutup</th>
-                            <th width="120px">Aksi</th>
+                            <th>Foto</th>
+                            <th width="100px">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,10 +60,11 @@
                         <tr>
                             <td><?= $no++ ?></td>
                             <td><?= $value['nama_bengkel'] ?></td>
-                            <td class="text-center"><?= $value['status'] ?></td>
+                            <td class="text-center"><?= $value['kategori'] ?></td>
                             <td><?= $value['alamat'] ?></td>
                             <td class="text-center"><?= date('s', strtotime($value['jam_buka'])) . '.00' ?></td>
                             <td class="text-center"><?= date('s', strtotime($value['jam_tutup'])) . '.00' ?></td>
+                            <td class="text-center"><img src="<?=base_url('foto/' .  $value['foto']) ?>" width="150px" height="100px"></td>
                             <td class="text-center">
                                 <a href="<?= base_url('Bengkel/Edit/' . $value['id_bengkel']) ?>" class="btn btn-xs btn-success btn-flat"><i class="fas fa-eye"></i></a>
                                 <a href="<?= base_url('Bengkel/Edit/' . $value['id_bengkel']) ?>" class="btn btn-xs btn-warning btn-flat"><i class="fas fa-pencil-alt"></i></a>

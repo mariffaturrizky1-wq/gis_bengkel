@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 02 Bulan Mei 2026 pada 07.43
+-- Waktu pembuatan: 05 Bulan Mei 2026 pada 16.50
 -- Versi server: 8.0.30
 -- Versi PHP: 8.5.4
 
@@ -30,16 +30,26 @@ SET time_zone = "+00:00";
 CREATE TABLE `tbl_bengkel` (
   `id_bengkel` int NOT NULL,
   `id_kategori` int DEFAULT NULL,
+  `kategori` varchar(20) DEFAULT NULL,
   `nama_bengkel` varchar(150) DEFAULT NULL,
   `alamat` varchar(250) DEFAULT NULL,
   `jam_buka` time DEFAULT NULL,
   `jam_tutup` time DEFAULT NULL,
-  `status` varchar(10) DEFAULT NULL,
   `coordinat` varchar(150) DEFAULT NULL,
+  `foto` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `id_provinsi` int DEFAULT NULL,
   `id_kabupaten` int DEFAULT NULL,
-  `id_kecamatan` int DEFAULT NULL
+  `id_kecamatan` int DEFAULT NULL,
+  `id_wilayah` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `tbl_bengkel`
+--
+
+INSERT INTO `tbl_bengkel` (`id_bengkel`, `id_kategori`, `kategori`, `nama_bengkel`, `alamat`, `jam_buka`, `jam_tutup`, `coordinat`, `foto`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_wilayah`) VALUES
+(1, 2, 'Bengkel Motor', 'BSA MOTOR (bumiayu)', 'Jl. K.H. Ahmad Dahlan No.8, Kerajan 1, Kalierang.', '00:00:08', '00:00:16', '-7.2538864896264235, 109.01721081299613', 'bsamotor.png', NULL, NULL, NULL, 1),
+(2, 2, 'Bengkel Motor', 'Adrenalin Motor Bengkel Umum Sparepart / Variasi', 'Jl. Raya Laren - Pasar Wage, Kalierang.', '00:00:08', '00:00:20', '-7.260157085298448, 109.00681591164765', 'adrenalinmotor.png', NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -7831,7 +7841,7 @@ ALTER TABLE `tbl_wilayah`
 -- AUTO_INCREMENT untuk tabel `tbl_bengkel`
 --
 ALTER TABLE `tbl_bengkel`
-  MODIFY `id_bengkel` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_bengkel` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_kategori`

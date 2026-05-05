@@ -19,7 +19,7 @@ $routes->get('User', 'User::index');
 $routes->get('Bengkel', 'Bengkel::index');
 $routes->get('Kategori', 'Kategori::index');
 $routes->post('Kategori/UpdateData/(:num)', 'Kategori::UpdateData/$1');
-
+$routes->get('/Bengkel/Input', 'Bengkel::Input');
 
 
 

@@ -1,4 +1,5 @@
 <div id="map" style="width: 100%; height: 730px;"></div>
+
 <script>
 var peta1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap'
@@ -46,5 +47,3 @@ var layerControl = L.control.layers(baseMaps).addTo(map);
     <?php } ?>
 </script>
 
-
-</script>
