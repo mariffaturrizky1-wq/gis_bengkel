@@ -54,7 +54,7 @@
             <div class="form-group">
                 <label>Coordinat Bengkel</label>
                 <div id="map" style="width: 100%; height: 500px;"></div>
-                <input name="coordinat" value="<?= old('coordinat')?>" placeholder="Coordinat Bengkel" class="form-control" readonly>
+                <input name="coordinat" id="Coordinat"   value="<?= old('coordinat')?>" placeholder="Coordinat Bengkel" class="form-control" readonly>
                     <p class="text-danger"><?= $validation->hasError('coordinat') ? $validation->getError('coordinat') : '' ?></p>
             </div>
 
@@ -121,40 +121,65 @@
 </div>
 
 <script>
-var peta1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap'
-});
+    var peta1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap'
+    });
 
-var peta2 = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenTopoMap'
-});
+    var peta2 = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenTopoMap'
+    });
 
-var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap HOT'
-});
+    var peta3 = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap HOT'
+    });
 
-var peta4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
-    attribution: '&copy; Stadia Maps'
-});
+    var peta4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
+        attribution: '&copy; Stadia Maps'
+    });
+        
+    const map = L.map('map', {
+        center: [<?= $web['coordinat_wilayah'] ?>],
+        zoom: <?= $web['zoom_view'] ?>,
+        layers: [peta1]
+    });
 
-	//const map = L.map('map').setView([-7.2575022267624565, 109.0062579249614], 13);
+    const baseMaps = {
+        'OpenStreetMap': peta1,
+        'Topo Map': peta2,
+        'HOT Map': peta3,
+        'Stadia Map': peta4
+    };
 
-	//const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	//	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	//}).addTo(map);
+    var layerControl = L.control.layers(baseMaps).addTo(map);
 
-const map = L.map('map', {
-    center: [<?= $web['coordinat_wilayah'] ?>],
-    zoom: <?= $web['zoom_view'] ?>,
-    layers: [peta1]
-});
+    var coordinatInput = document.querySelector("[name=coordinat]"); 
 
-const baseMaps = {
-    'OpenStreetMap': peta1,
-    'Topo Map': peta2,
-    'HOT Map': peta3,
-    'Stadia Map': peta4
-};
+    var curLocation = [<?= $web['coordinat_wilayah'] ?>];
+    map.attributionControl.setPrefix(false);
+    var marker = new L.marker(curLocation, {
+        draggable: 'true',
+    });
+     
+    //mengambil coordinat saat marker digeser
+    marker.on('dragend',function(e) {
+        var position = marker.getLatLng();
+        marker.setLatLng(position,{
+            curLocation
+        }).bindPopup(position).update();
+        $('#Coordinat').val(position.lat +  "," + position.lng);
+    });
 
-var layerControl = L.control.layers(baseMaps).addTo(map);
+    //mengambil coordinat saat map onclick
+    map.on("click", function(e){
+        var lat = e.latlng.lat;
+        var lng = e.latlng.lng;
+        if (!marker) {
+            marker = L.marker(e.latlng).addTo(map);
+        }else{
+            marker.setLatLng(e.latlng);
+        }
+        coordinatInput.value=lat+ ',' +lng
+    })
+
+    map.addLayer(marker);
 </script>
