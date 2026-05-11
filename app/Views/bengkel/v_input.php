@@ -62,7 +62,11 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Provinsi</label>
-                        <select name="id_provinsi" class="form-control">
+                        <select name="id_provinsi" id="id_provinsi" class="form-control select2" style="width: 100%;">
+                        <option value="">---Pilih Provinsi---</option>
+                        <?php foreach ($provinsi as $key => $value) { ?> 
+                            <option value="<?= $value['id_provinsi'] ?>"><?= $value['nama_provinsi'] ?></option>
+                        <?php } ?>
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_provinsi') ? $validation->getError('id_provinsi') : '' ?></p>
                     </div>
@@ -70,7 +74,7 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Kabupaten</label>
-                        <select name="id_kabupaten" class="form-control">
+                        <select name="id_kabupaten" id="id_kabupaten" class="form-control">
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_kabupaten') ? $validation->getError('id_kabupaten') : '' ?></p>
                     </div>
@@ -78,7 +82,7 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Kecamatan</label>
-                        <select name="id_kecamatan" class="form-control">
+                        <select name="id_kecamatan" id="id_kecamatan" class="form-control">
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_kecamatan') ? $validation->getError('id_kecamatan') : '' ?></p>
                     </div>
@@ -98,6 +102,10 @@
                     <div class="form-group">
                         <label>Wilayah Administrasi</label>
                         <select name="id_wilayah" class="form-control">
+                        <option value="">---Pilih Wilayah Administrasi---</option>
+                        <?php foreach ($Wilayah as $key => $value) { ?> 
+                            <option value="<?= $value['id_wilayah'] ?>"><?= $value['nama_wilayah'] ?></option>
+                        <?php } ?>   
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_wilayah') ? $validation->getError('id_wilayah') : '' ?></p>
                     </div>
@@ -119,6 +127,46 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        // Initialize Select2 Elements
+        $('.select2').select2();
+
+        // Dropdown Kabupaten
+        $('#id_provinsi').change(function() {
+            var id_provinsi = $(this).val();
+            if (id_provinsi != "") {
+                $.ajax({
+                    type: "GET", 
+                    url: "<?= base_url('bengkel/kabupaten') ?>", // Pastikan huruf kecil semua agar aman
+                    data: { id_provinsi: id_provinsi },
+                    success: function(response) {
+                        $('#id_kabupaten').html(response);
+                        // Reset kecamatan saat provinsi ganti
+                        $('#id_kecamatan').html('<option value="">--Pilih Kecamatan--</option>');
+                    }
+                });
+            }
+        });
+
+        // Dropdown Kecamatan
+        $('#id_kabupaten').change(function() {
+            var id_kabupaten = $(this).val(); // Lebih ringkas pakai $(this)
+            if (id_kabupaten != "") {
+                $.ajax({
+                    type: "GET", // Disamakan pakai GET agar tidak error CSRF
+                    url: "<?= base_url('bengkel/kecamatan') ?>", // Arahkan ke controller Bengkel
+                    data: { id_kabupaten: id_kabupaten },
+                    success: function(response) {
+                        $('#id_kecamatan').html(response);
+                    }
+                });
+            }
+        });
+    });
+</script>
+
 
 <script>
     var peta1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

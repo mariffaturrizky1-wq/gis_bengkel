@@ -37,4 +37,28 @@ class ModelBengkel extends Model
         ->where('id_bengkel', $data['id_bengkel'])
         ->delete($data);
     }
+
+
+    //provinsi
+    public function allProvinsi()
+    {
+        return $this->db->table('tbl_provinsi')
+                ->orderBy('id_provinsi', 'ASC')
+                ->get()->getResultArray();
+    }
+
+    public function allKabupaten($id_provinsi)
+    {
+        return $this->db->table('tbl_kabupaten')
+                ->where('id_provinsi', $id_provinsi)
+                ->get()->getResultArray();
+    }
+
+    public function allKecamatan($id_kabupaten)
+    {
+        return $this->db->table('tbl_kecamatan')
+            ->where('id_kabupaten', $id_kabupaten)
+            ->get()->getResultArray();
+    }
+
 }
