@@ -22,6 +22,7 @@ $routes->post('Kategori/UpdateData/(:num)', 'Kategori::UpdateData/$1');
 $routes->get('/Bengkel/Input', 'Bengkel::Input');
 $routes->get('bengkel/kabupaten', 'Bengkel::kabupaten');
 $routes->get('bengkel/kecamatan', 'Bengkel::kecamatan');
+$routes->post('Bengkel/InsertData', 'Bengkel::InsertData');
 
 
 

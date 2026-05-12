@@ -40,6 +40,54 @@ class Bengkel extends BaseController
         return view('v_template_back_end', $data);
     }
 
+    
+    public function InsertData()
+    {
+        $rules = [
+            'nama_bengkel' => 'required',
+            'jam_buka'     => 'required',
+            'jam_tutup'    => 'required',
+            'kategori'     => 'required', 
+            'coordinat'    => 'required',
+            'id_provinsi'  => 'required',
+            'id_kabupaten' => 'required',
+            'id_kecamatan' => 'required',
+            'alamat'       => 'required',
+            'id_wilayah'   => 'required',
+            'foto'         => 'uploaded[foto]|max_size[foto,2000]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+        ];
+
+        if ($this->validate($rules)) {
+            // --- JIKA LOLOS VALIDASI ---
+            $foto = $this->request->getFile('foto');
+            $nama_file_foto = $foto->getRandomName();
+
+            $data = [
+                'nama_bengkel' => $this->request->getPost('nama_bengkel'),
+                'jam_buka'     => $this->request->getPost('jam_buka'),
+                'jam_tutup'    => $this->request->getPost('jam_tutup'),
+                'kategori'     => $this->request->getPost('kategori'),
+                'coordinat'    => $this->request->getPost('coordinat'),
+                'id_provinsi'  => $this->request->getPost('id_provinsi'),
+                'id_kabupaten' => $this->request->getPost('id_kabupaten'),
+                'id_kecamatan' => $this->request->getPost('id_kecamatan'),
+                'alamat'       => $this->request->getPost('alamat'),
+                'id_wilayah'   => $this->request->getPost('id_wilayah'),
+                'foto'         => $nama_file_foto,
+            ];
+
+            $foto->move('foto', $nama_file_foto);
+            $this->ModelBengkel->InsertData($data);
+            
+            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan !!');
+            return redirect()->to('Bengkel');
+
+        } else {
+            // --- JIKA GAGAL VALIDASI ---
+            return redirect()->back()->withInput()->with('validation', $this->validator);
+        }
+    }
+
     public function kabupaten()
     {
         $id_provinsi = trim($this->request->getGet('id_provinsi')); 

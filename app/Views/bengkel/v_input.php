@@ -18,7 +18,7 @@
                     <div class="form-group">
                         <label>Nama Bengkel</label>
                         <input name="nama_bengkel" value="<?= old('nama_bengkel')?>" placeholder="Nama Bengkel" class="form-control">
-                        <p class="text-danger"><?= $validation->hasError('nama_bengkel') ? $validation->getError('nama_brngkel') : '' ?></p>
+                        <p class="text-danger"><?= $validation->hasError('nama_bengkel') ? $validation->getError('nama_bengkel') : '' ?></p>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Kategori</label>
-                        <select name="status" class="form-control">
+                        <select name="kategori" class="form-control">
                             <option value="">--Pilih Kategori--</option>
                             <option value="Motor">Motor</option>
                             <option value="Mobil">Mobil</option>
@@ -114,13 +114,13 @@
 
             <div class="form-group">
                 <label>Foto Bengkel</label>
-                <input type="file" accept="image/png" name="foto" value="<?= old('foto')?>" class="form-control">
+                <input type="file" accept="image/*" name="foto" class="form-control">
                 <p class="text-danger"><?= $validation->hasError('foto') ? $validation->getError('foto') : '' ?></p>
             </div>
 
 
-            <button class="btn btn-primary btn_flat" type="submit">Simpan</button>
             <a href="<?= base_url('Wilayah')?>" class="btn btn-success btn_flat">Kembali</a>
+            <button class="btn btn-primary btn_flat" type="submit">Simpan</button>
 
             <?php echo form_close() ?>
 
