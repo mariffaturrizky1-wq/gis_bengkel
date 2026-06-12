@@ -41,12 +41,13 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Kategori</label>
-                        <select name="kategori" class="form-control">
+                        <select name="id_kategori" class="form-control">
                             <option value="">--Pilih Kategori--</option>
-                            <option value="Motor">Motor</option>
-                            <option value="Mobil">Mobil</option>
+                            <?php foreach ($kategori as $key => $value) { ?>
+                                <option value="<?= $value['id_kategori'] ?>"><?= $value['kategori'] ?></option>
+                            <?php } ?>
                         </select>
-                        <p class="text-danger"><?= $validation->hasError('kategori') ? $validation->getError('kategori') : '' ?></p>
+                        <p class="text-danger"><?= $validation->hasError('id_kategori') ? $validation->getError('id_kategori') : '' ?></p>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,8 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\ModelKategori;
+bengkel motor
+
 class Kategori extends BaseController
 {
       public function __construct() 

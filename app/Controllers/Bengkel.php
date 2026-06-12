@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\ModelWilayah;
 use App\Models\ModelSetting;
 use App\Models\ModelBengkel;
+use App\Models\ModelKategori;
 
 class Bengkel extends BaseController
 {
@@ -14,6 +15,7 @@ class Bengkel extends BaseController
     $this->ModelWilayah = new ModelWilayah();
     $this->ModelSetting = new ModelSetting();
     $this->ModelBengkel = new ModelBengkel();
+    $this->ModelKategori = new ModelKategori();
     }
 
     public function index()
@@ -36,57 +38,60 @@ class Bengkel extends BaseController
             'web' => $this->ModelSetting->DataWeb(),
             'provinsi' => $this->ModelBengkel->allProvinsi(),
             'Wilayah' => $this->ModelWilayah->AllData(),
+            'kategori' => $this->ModelKategori->AllData(),
         ];
         return view('v_template_back_end', $data);
     }
 
     
     public function InsertData()
-    {
-        $rules = [
-            'nama_bengkel' => 'required',
-            'jam_buka'     => 'required',
-            'jam_tutup'    => 'required',
-            'kategori'     => 'required', 
-            'coordinat'    => 'required',
-            'id_provinsi'  => 'required',
-            'id_kabupaten' => 'required',
-            'id_kecamatan' => 'required',
-            'alamat'       => 'required',
-            'id_wilayah'   => 'required',
-            'foto'         => 'uploaded[foto]|max_size[foto,2000]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+{
+    $rules = [
+        'nama_bengkel' => 'required',
+        'jam_buka'     => 'required',
+        'jam_tutup'    => 'required',
+        'id_kategori'  => 'required',
+        'coordinat'    => 'required',
+        'id_provinsi'  => 'required',
+        'id_kabupaten' => 'required',
+        'id_kecamatan' => 'required',
+        'alamat'       => 'required',
+        'id_wilayah'   => 'required',
+        'foto'         => 'uploaded[foto]|max_size[foto,2000]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+    ];
+
+    if ($this->validate($rules)) {
+
+        $foto = $this->request->getFile('foto');
+        $nama_file_foto = $foto->getRandomName();
+
+        $data = [
+            'nama_bengkel' => $this->request->getPost('nama_bengkel'),
+            'jam_buka'     => $this->request->getPost('jam_buka'),
+            'jam_tutup'    => $this->request->getPost('jam_tutup'),
+            'id_kategori'  => $this->request->getPost('id_kategori'),
+            'coordinat'    => $this->request->getPost('coordinat'),
+            'id_provinsi'  => $this->request->getPost('id_provinsi'),
+            'id_kabupaten' => $this->request->getPost('id_kabupaten'),
+            'id_kecamatan' => $this->request->getPost('id_kecamatan'),
+            'alamat'       => $this->request->getPost('alamat'),
+            'id_wilayah'   => $this->request->getPost('id_wilayah'),
+            'foto'         => $nama_file_foto,
         ];
 
-        if ($this->validate($rules)) {
-            // --- JIKA LOLOS VALIDASI ---
-            $foto = $this->request->getFile('foto');
-            $nama_file_foto = $foto->getRandomName();
+        $foto->move('foto', $nama_file_foto);
 
-            $data = [
-                'nama_bengkel' => $this->request->getPost('nama_bengkel'),
-                'jam_buka'     => $this->request->getPost('jam_buka'),
-                'jam_tutup'    => $this->request->getPost('jam_tutup'),
-                'kategori'     => $this->request->getPost('kategori'),
-                'coordinat'    => $this->request->getPost('coordinat'),
-                'id_provinsi'  => $this->request->getPost('id_provinsi'),
-                'id_kabupaten' => $this->request->getPost('id_kabupaten'),
-                'id_kecamatan' => $this->request->getPost('id_kecamatan'),
-                'alamat'       => $this->request->getPost('alamat'),
-                'id_wilayah'   => $this->request->getPost('id_wilayah'),
-                'foto'         => $nama_file_foto,
-            ];
+        $this->ModelBengkel->InsertData($data);
 
-            $foto->move('foto', $nama_file_foto);
-            $this->ModelBengkel->InsertData($data);
-            
-            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan !!');
-            return redirect()->to('Bengkel');
+        session()->setFlashdata('insert', 'Data Berhasil Ditambahkan !!');
 
-        } else {
-            // --- JIKA GAGAL VALIDASI ---
-            return redirect()->back()->withInput()->with('validation', $this->validator);
-        }
-    }
+        return redirect()->to(base_url('Bengkel'));
+
+    } else {
+    dd($this->validator->getErrors());
+}
+
+}
 
     public function kabupaten()
     {
@@ -121,6 +126,19 @@ class Bengkel extends BaseController
             }
         }
     }
+
+    public function jenjang()
+{
+    $jenjang = $this->ModelBengkel->allJenjang();
+
+    echo '<option value="">--Pilih Jenjang--</option>';
+
+    if ($jenjang) {
+        foreach ($jenjang as $value) {
+            echo '<option value="' . $value['id_jenjang'] . '">' . $value['jenjang'] . '</option>';
+        }
+    }
+}
 
 
 

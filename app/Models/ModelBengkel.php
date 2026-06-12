@@ -7,10 +7,12 @@ use CodeIgniter\Model;
 class ModelBengkel extends Model
 {
     public function AllData()
-    {
-        return $this->db->table('tbl_bengkel')
-                ->get()->getResultArray();
-    }
+{
+    return $this->db->table('tbl_bengkel')
+            ->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_bengkel.id_kategori', 'left')
+            ->get()
+            ->getResultArray();
+}
 
     public function InsertData($data)
     {
@@ -60,5 +62,12 @@ class ModelBengkel extends Model
             ->where('id_kabupaten', $id_kabupaten)
             ->get()->getResultArray();
     }
+
+    public function allJenjang()
+{
+    return $this->db->table('tbl_jenjang')
+            ->orderBy('id_jenjang', 'ASC')
+            ->get()->getResultArray();
+}
 
 }

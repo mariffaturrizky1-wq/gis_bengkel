@@ -1,10 +1,10 @@
 <div class="col-md-12">
             <div class="card card-outline card-primary">
-              <div class="card-header">
+            <div class="card-header">
                 <h3 class="card-title"><?= $judul ?></h3>
 
                 <div class="card-tools">
-                  <a href="<?= base_url('Bengkel/Input')?>" class="btn btn-primary btn-sm">
+                <a href="<?= base_url('Bengkel/Input')?>" class="btn btn-primary btn-sm">
                     <i class="fas fa-plus"></i> Tambah
                 </a>
                 </div>
