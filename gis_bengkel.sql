@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 05 Bulan Mei 2026 pada 16.50
+-- Waktu pembuatan: 13 Jun 2026 pada 06.19
 -- Versi server: 8.0.30
 -- Versi PHP: 8.5.4
 
@@ -36,7 +36,7 @@ CREATE TABLE `tbl_bengkel` (
   `jam_buka` time DEFAULT NULL,
   `jam_tutup` time DEFAULT NULL,
   `coordinat` varchar(150) DEFAULT NULL,
-  `foto` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `foto` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `id_provinsi` int DEFAULT NULL,
   `id_kabupaten` int DEFAULT NULL,
   `id_kecamatan` int DEFAULT NULL,
@@ -48,8 +48,11 @@ CREATE TABLE `tbl_bengkel` (
 --
 
 INSERT INTO `tbl_bengkel` (`id_bengkel`, `id_kategori`, `kategori`, `nama_bengkel`, `alamat`, `jam_buka`, `jam_tutup`, `coordinat`, `foto`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_wilayah`) VALUES
-(1, 2, 'Bengkel Motor', 'BSA MOTOR (bumiayu)', 'Jl. K.H. Ahmad Dahlan No.8, Kerajan 1, Kalierang.', '00:00:08', '00:00:16', '-7.2538864896264235, 109.01721081299613', 'bsamotor.png', NULL, NULL, NULL, 1),
-(2, 2, 'Bengkel Motor', 'Adrenalin Motor Bengkel Umum Sparepart / Variasi', 'Jl. Raya Laren - Pasar Wage, Kalierang.', '00:00:08', '00:00:20', '-7.260157085298448, 109.00681591164765', 'adrenalinmotor.png', NULL, NULL, NULL, 1);
+(1, 1, 'Motor', 'BSA MOTOR (bumiayu)', 'Jl. K.H. Ahmad Dahlan No.8, Kerajan 1, Kalierang.', '00:00:08', '00:00:16', '-7.2538864896264235, 109.01721081299613', 'bsamotor.png', NULL, NULL, NULL, 1),
+(2, 1, ' Motor', 'Adrenalin Motor Bengkel Umum Sparepart / Variasi', 'Jl. Raya Laren - Pasar Wage, Kalierang.', '00:00:08', '00:00:20', '-7.260157085298448, 109.00681591164765', 'adrenalinmotor.png', NULL, NULL, NULL, 1),
+(4, 1, NULL, 'Arta Jaya Motor', 'Jl. Pangeran Diponegoro No.215, Karangtuang, Dukuhturi', '00:00:08', '00:00:18', '-7.239342443732098,109.00970353891734', '1781263731_8dec8d03c802706d1575.png', 33, 3329, 3329030, 1),
+(5, 2, NULL, 'Bengkel Mobil & AC Bintang Variasi', 'Jl. Lingkar terminal, Blere, Adisana', '00:00:08', '00:00:18', '-7.237128629303061,109.02189639338404', '1781264983_e440bc9dc596150eb11f.png', 33, 3329, 3329170, 1),
+(6, 2, NULL, 'Bengkel Mobil Maju Mandiri Motor', 'Jl. Raya Pruwatan No.RT 04/07, Krajan Kidul, Kaliwadas', '00:00:08', '00:00:16', '-7.278394602665766,108.98361154187077', '1781266767_38af229a5e47e43c406d.png', 33, 3329, 3329020, 1);
 
 -- --------------------------------------------------------
 
@@ -7841,7 +7844,7 @@ ALTER TABLE `tbl_wilayah`
 -- AUTO_INCREMENT untuk tabel `tbl_bengkel`
 --
 ALTER TABLE `tbl_bengkel`
-  MODIFY `id_bengkel` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_bengkel` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_kategori`
