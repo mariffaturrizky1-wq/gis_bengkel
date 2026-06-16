@@ -11,13 +11,13 @@
             $validation = session()->get('validation') ?? \Config\Services::validation();
             ?>
 
-            <?php echo form_open_multipart('Bengkel/InsertData') ?>
+            <?php echo form_open_multipart('Bengkel/UpdateData/'.$bengkel ['id_bengkel']) ?>
         
             <div class="row">
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Nama Bengkel</label>
-                        <input name="nama_bengkel" value="<?= old('nama_bengkel')?>" placeholder="Nama Bengkel" class="form-control">
+                        <input name="nama_bengkel" value="<?= $bengkel ['nama_bengkel'] ?>" placeholder="Nama Bengkel" class="form-control">
                         <p class="text-danger"><?= $validation->hasError('nama_bengkel') ? $validation->getError('nama_bengkel') : '' ?></p>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label>Jam Buka</label>
-                        <input name="jam_buka" value="<?= old('jam_buka')?>" placeholder="Jam Buka" class="form-control">
+                        <input name="jam_buka" value="<?= $bengkel ['jam_buka'] ?>" placeholder="Jam Buka" class="form-control">
                         <p class="text-danger"><?= $validation->hasError('jam_buka') ? $validation->getError('jam_buka') : '' ?></p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                 <div class="col-sm-2">
                     <div class="form-group">
                         <label>Jam Tutup</label>
-                        <input name="jam_tutup" value="<?= old('jam_tutup')?>" placeholder="Jam Tutup" class="form-control">
+                        <input name="jam_tutup" value="<?= $bengkel ['jam_tutup'] ?>" placeholder="Jam Tutup" class="form-control">
                         <p class="text-danger"><?= $validation->hasError('jam_tutup') ? $validation->getError('jam_tutup') : '' ?></p>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="form-group">
                         <label>Kategori</label>
                         <select name="id_kategori" class="form-control">
-                            <option value="">--Pilih Kategori--</option>
+                            <option value="<?= $bengkel ['kategori'] ?>"><?= $bengkel ['kategori'] ?> </option>
                             <?php foreach ($kategori as $key => $value) { ?>
                                 <option value="<?= $value['id_kategori'] ?>"><?= $value['kategori'] ?></option>
                             <?php } ?>
@@ -55,7 +55,7 @@
             <div class="form-group">
                 <label>Coordinat Bengkel</label>
                 <div id="map" style="width: 100%; height: 500px;"></div>
-                <input name="coordinat" id="Coordinat"   value="<?= old('coordinat')?>" placeholder="Coordinat Bengkel" class="form-control" readonly>
+                <input name="coordinat" id="Coordinat"   value="<?= $bengkel ['coordinat']?>" placeholder="Coordinat Bengkel" class="form-control" readonly>
                     <p class="text-danger"><?= $validation->hasError('coordinat') ? $validation->getError('coordinat') : '' ?></p>
             </div>
 
@@ -64,26 +64,32 @@
                     <div class="form-group">
                         <label>Provinsi</label>
                         <select name="id_provinsi" id="id_provinsi" class="form-control select2" style="width: 100%;">
-                        <option value="">---Pilih Provinsi---</option>
-                        <?php foreach ($provinsi as $key => $value) { ?> 
-                            <option value="<?= $value['id_provinsi'] ?>"><?= $value['nama_provinsi'] ?></option>
+                       <option value="">--Pilih Provinsi--</option>
+                        <?php foreach ($provinsi as $key => $value) { ?>
+                            <option value="<?= $value['id_provinsi'] ?>" <?= $value['id_provinsi'] == $bengkel['id_provinsi'] ? 'selected' : '' ?>>
+                                <?= $value['nama_provinsi'] ?>
+                            </option>
                         <?php } ?>
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_provinsi') ? $validation->getError('id_provinsi') : '' ?></p>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Kabupaten</label>
                         <select name="id_kabupaten" id="id_kabupaten" class="form-control">
+                            <option value="<?= $bengkel ['id_kabupaten'] ?>"><?= $bengkel ['nama_kabupaten'] ?> </option>
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_kabupaten') ? $validation->getError('id_kabupaten') : '' ?></p>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="form-group">
                         <label>Kecamatan</label>
                         <select name="id_kecamatan" id="id_kecamatan" class="form-control">
+                            <option value="<?= $bengkel ['id_kecamatan'] ?>"><?= $bengkel ['nama_kecamatan'] ?> </option>
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_kecamatan') ? $validation->getError('id_kecamatan') : '' ?></p>
                     </div>
@@ -94,7 +100,7 @@
                     <div class="col-sm-8">
                         <div class="form-group">
                         <label>Alamat</label>
-                        <input name="alamat" value="<?= old('alamat')?>" placeholder="Alamat Bengkel"class="form-control">
+                        <input name="alamat" value="<?= $bengkel ['alamat']?>" placeholder="Alamat Bengkel"class="form-control">
                         <p class="text-danger"><?= $validation->hasError('alamat') ? $validation->getError('alamat') : '' ?></p>
                     </div>
                 </div>
@@ -105,7 +111,9 @@
                         <select name="id_wilayah" class="form-control">
                         <option value="">---Pilih Wilayah Administrasi---</option>
                         <?php foreach ($Wilayah as $key => $value) { ?> 
-                            <option value="<?= $value['id_wilayah'] ?>"><?= $value['nama_wilayah'] ?></option>
+                            <option value="<?= $value['id_wilayah'] ?>" <?= $value['id_wilayah'] == $bengkel['id_wilayah'] ? 'selected' : '' ?>>
+                                <?= $value['nama_wilayah'] ?>
+                            </option>
                         <?php } ?>   
                         </select>
                         <p class="text-danger"><?= $validation->hasError('id_wilayah') ? $validation->getError('id_wilayah') : '' ?></p>
@@ -114,13 +122,13 @@
             </div>
 
             <div class="form-group">
-                <label>Foto Bengkel</label>
+                <label>Ganti Foto Bengkel</label>
                 <input type="file" accept="image/*" name="foto" class="form-control">
                 <p class="text-danger"><?= $validation->hasError('foto') ? $validation->getError('foto') : '' ?></p>
             </div>
 
 
-            <a href="<?= base_url('Sekolah')?>" class="btn btn-success btn_flat">Kembali</a>
+            <a href="<?= base_url('Bengkel')?>" class="btn btn-success btn_flat">Kembali</a>
             <button class="btn btn-primary btn_flat" type="submit">Simpan</button>
 
             <?php echo form_close() ?>
@@ -187,7 +195,7 @@
     });
         
     const map = L.map('map', {
-        center: [<?= $web['coordinat_wilayah'] ?>],
+        center: [<?= $bengkel ['coordinat'] ?>],
         zoom: <?= $web['zoom_view'] ?>,
         layers: [peta1]
     });
@@ -203,7 +211,7 @@
 
     var coordinatInput = document.querySelector("[name=coordinat]"); 
 
-    var curLocation = [<?= $web['coordinat_wilayah'] ?>];
+    var curLocation = [<?= $bengkel ['coordinat'] ?>];
     map.attributionControl.setPrefix(false);
     var marker = new L.marker(curLocation, {
         draggable: 'true',

@@ -22,6 +22,9 @@ class ModelBengkel extends Model
     public function DetailData($id_bengkel)
     {
         return $this->db->table('tbl_bengkel')
+             ->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_bengkel.id_kategori', 'left')
+             ->join('tbl_kabupaten', 'tbl_kabupaten.id_kabupaten = tbl_bengkel.id_kabupaten', 'left')
+             ->join('tbl_kecamatan', 'tbl_kecamatan.id_kecamatan = tbl_bengkel.id_kecamatan', 'left')
                 ->where('id_bengkel', $id_bengkel)
                 ->get()->getRowArray();
     }
