@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 16 Jun 2026 pada 12.48
+-- Waktu pembuatan: 16 Jun 2026 pada 18.37
 -- Versi server: 8.0.30
 -- Versi PHP: 8.5.4
 
@@ -7760,8 +7760,9 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `password`, `foto`) VALUES
-(1, 'Mekanik', 'mekanik@gmail.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'mekanik.png'),
-(2, 'helper', 'helper@gmail.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'helper.png');
+(1, 'Mekanik', 'Mekanik@gmail.com', '94d95ac4b15b3f446726d99290614fb3bb7e0109', 'mekanik.png'),
+(2, 'Helper', 'Helper@gmail.com', '6e5211f2cdcf54cd152216d8430757ea7baa03e8', '1781634287_83434e216e3af96d9d3a.jpg'),
+(3, 'Bos Besar', 'bosbesar@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '1781629670_27edaf88d132d22d26cc.png');
 
 -- --------------------------------------------------------
 
@@ -7871,7 +7872,7 @@ ALTER TABLE `tbl_setting`
 -- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_wilayah`

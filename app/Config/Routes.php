@@ -34,3 +34,6 @@ $routes->get('Bengkel/Delete/(:num)', 'Bengkel::Delete/$1');
 $routes->get('Bengkel/Detail/(:num)', 'Bengkel::Detail/$1');
 $routes->get('User/Input', 'User::Input');
 $routes->post('User/InsertData', 'User::InsertData');
+$routes->get('User/Edit/(:num)', 'User::Edit/$1');
+$routes->post('User/UpdateData/(:num)', 'User::UpdateData/$1');
+$routes->get('User/Delete/(:num)', 'User::Delete/$1');
