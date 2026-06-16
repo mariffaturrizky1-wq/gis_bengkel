@@ -162,6 +162,24 @@ public function UpdateData($id_bengkel)
     }
 }
 
+
+    public function Delete($id_bengkel)
+    {
+        //delete foto
+        $bengkel = $this->ModelBengkel->DetailData($id_bengkel);
+        if ($bengkel ['foto'] <> ''){
+            unlink('foto/' . $bengkel ['foto']);
+        }
+        $data = [
+            'id_bengkel'   => $id_bengkel,
+        ];
+        $this->ModelBengkel->DeleteData($data);
+
+        session()->setFlashdata('insert', 'Data Berhasil Didelete !!');
+
+        return redirect()->to(base_url('Bengkel'));
+    }
+
     public function kabupaten()
     {
         $id_provinsi = trim($this->request->getGet('id_provinsi')); 
