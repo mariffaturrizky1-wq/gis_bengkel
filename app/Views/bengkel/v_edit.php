@@ -128,8 +128,8 @@
             </div>
 
 
-            <a href="<?= base_url('Bengkel')?>" class="btn btn-success btn_flat">Kembali</a>
             <button class="btn btn-primary btn_flat" type="submit">Simpan</button>
+            <a href="<?= base_url('Bengkel')?>" class="btn btn-success btn_flat">Kembali</a>
 
             <?php echo form_close() ?>
 

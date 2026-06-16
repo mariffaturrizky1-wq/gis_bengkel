@@ -152,7 +152,7 @@ public function UpdateData($id_bengkel)
 
         $this->ModelBengkel->UpdateData($data);
 
-        session()->setFlashdata('insert', 'Data Berhasil Diupdate !!');
+        session()->setFlashdata('update', 'Data Berhasil Diupdate !!');
 
         return redirect()->to(base_url('Bengkel'));
 
@@ -175,7 +175,7 @@ public function UpdateData($id_bengkel)
         ];
         $this->ModelBengkel->DeleteData($data);
 
-        session()->setFlashdata('insert', 'Data Berhasil Didelete !!');
+        session()->setFlashdata('delete', 'Data Berhasil Didelete !!');
 
         return redirect()->to(base_url('Bengkel'));
     }
