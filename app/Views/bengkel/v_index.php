@@ -66,7 +66,7 @@
                             <td class="text-center"><?= date('s', strtotime($value['jam_tutup'])) . '.00' ?></td>
                             <td class="text-center"><img src="<?=base_url('foto/' .  $value['foto']) ?>" width="150px" height="100px"></td>
                             <td class="text-center">
-                                <a href="<?= base_url('Bengkel/Edit/' . $value['id_bengkel']) ?>" class="btn btn-xs btn-success btn-flat"><i class="fas fa-eye"></i></a>
+                                <a href="<?= base_url('Bengkel/Detail/' . $value['id_bengkel']) ?>" class="btn btn-xs btn-success btn-flat"><i class="fas fa-eye"></i></a>
                                 <a href="<?= base_url('Bengkel/Edit/' . $value['id_bengkel']) ?>" class="btn btn-xs btn-warning btn-flat"><i class="fas fa-pencil-alt"></i></a>
                                 <a href="<?= base_url('Bengkel/Delete/' . $value['id_bengkel']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-xs btn-danger btn-flat"><i class="fas fa-trash"></i></a>
                             </td>

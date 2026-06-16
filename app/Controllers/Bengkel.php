@@ -180,6 +180,18 @@ public function UpdateData($id_bengkel)
         return redirect()->to(base_url('Bengkel'));
     }
 
+    public function Detail($id_bengkel)
+    {
+        $data = [
+            'judul' => 'Detail Bengkel',
+            'menu' => 'bengkel',
+            'page' => 'Bengkel/v_detail',
+            'web' => $this->ModelSetting->DataWeb(),
+            'bengkel' => $this->ModelBengkel->DetailData($id_bengkel),
+        ];
+        return view('v_template_back_end', $data);
+    }
+
     public function kabupaten()
     {
         $id_provinsi = trim($this->request->getGet('id_provinsi')); 

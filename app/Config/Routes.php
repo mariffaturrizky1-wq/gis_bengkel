@@ -31,3 +31,4 @@ $routes->get('Kategori', 'Kategori::index');
 $routes->post('Kategori/UpdateData/(:num)', 'Kategori::UpdateData/$1');
 
 $routes->get('Bengkel/Delete/(:num)', 'Bengkel::Delete/$1');
+$routes->get('Bengkel/Detail/(:num)', 'Bengkel::Detail/$1');
