@@ -32,3 +32,5 @@ $routes->post('Kategori/UpdateData/(:num)', 'Kategori::UpdateData/$1');
 
 $routes->get('Bengkel/Delete/(:num)', 'Bengkel::Delete/$1');
 $routes->get('Bengkel/Detail/(:num)', 'Bengkel::Detail/$1');
+$routes->get('User/Input', 'User::Input');
+$routes->post('User/InsertData', 'User::InsertData');
