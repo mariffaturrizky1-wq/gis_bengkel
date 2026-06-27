@@ -37,3 +37,10 @@ $routes->post('User/InsertData', 'User::InsertData');
 $routes->get('User/Edit/(:num)', 'User::Edit/$1');
 $routes->post('User/UpdateData/(:num)', 'User::UpdateData/$1');
 $routes->get('User/Delete/(:num)', 'User::Delete/$1');
+
+$routes->get('auth/login', 'Auth::login');          // ✅ route ke halaman login
+$routes->get('auth/daftar', 'Auth::daftar');
+$routes->post('auth/simpan_daftar', 'Auth::simpan_daftar');
+$routes->post('auth/cek_login_user', 'Auth::cek_login_user'); // ✅ proses login
+$routes->get('admin', 'Admin::index');
+$routes->get('auth/logout', 'Auth::logout');

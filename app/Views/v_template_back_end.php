@@ -83,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?=base_url('auth/login') ?>">
           <i class="fas fa-sign-out-alt"></i> Log Out
         </a>
       </li>
