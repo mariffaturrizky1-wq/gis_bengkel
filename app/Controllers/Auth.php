@@ -67,7 +67,7 @@ class Auth extends BaseController
         }
     }
 
-    public function LogOut()
+    public function logout()
     {
         session()->remove('nama_user');
         session()->remove('foto');

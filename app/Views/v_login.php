@@ -579,6 +579,10 @@
       </button>
     </form>
 
+    <a href="<?= base_url('home') ?>" class="btn-sec" style="display: flex; align-items: center; justify-content: center; height: 52px; text-decoration: none; margin-bottom: 12px; font-weight: 800;">
+      <i class="fas fa-arrow-left"></i> BATAL / KEMBALI
+    </a>
+
     <div class="divider">atau</div>
     <button class="btn-sec" onclick="contactAdmin()">
       <i class="fas fa-headset"></i> Hubungi Administrator

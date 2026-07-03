@@ -34,6 +34,7 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'FilterAuth'    => \App\Filters\FilterAuth::class,
     ];
 
     /**
@@ -72,13 +73,28 @@ class Filters extends BaseFilters
      */
     public array $globals = [
         'before' => [
-            // 'honeypot',
-            // 'csrf',
-            // 'invalidchars',
+            'FilterAuth' => [
+            'except' => [
+                'Auth', 'Auth/*',
+                'Home', 'Home/*',
+
+
+                ]
+            ]
         ],
         'after' => [
-            // 'honeypot',
-            // 'secureheaders',
+            'toolbar',
+            'filterauth' => [
+                'except' => [
+                    'Auth', 'Auth/*',
+                    'Admin', 'Admin/*',
+                    'Home', 'Home/*',
+                    'Wilayah', 'Wilayah/*',     // Izinkan akses halaman Wilayah setelah login
+                    'Kategori', 'Kategori/*',     // Izinkan akses halaman Jenjang setelah login
+                    'Bengkel', 'Bengkel/*',     // Izinkan akses halaman Sekolah setelah login
+                    'User', 'User/*',           // Izinkan akses halaman User setelah login
+                ]
+            ],
         ],
     ];
 

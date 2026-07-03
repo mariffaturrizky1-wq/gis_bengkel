@@ -44,3 +44,10 @@ $routes->post('auth/simpan_daftar', 'Auth::simpan_daftar');
 $routes->post('auth/cek_login_user', 'Auth::cek_login_user'); // ✅ proses login
 $routes->get('admin', 'Admin::index');
 $routes->get('auth/logout', 'Auth::logout');
+
+$routes->get('Auth/Login', 'Auth::login');
+$routes->get('Admin', 'Admin::index');
+
+$routes->get('auth/LogOut', 'Auth::LogOut');
+
+$routes->get('home', 'Home::index');
