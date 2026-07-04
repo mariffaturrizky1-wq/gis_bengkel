@@ -49,5 +49,8 @@ $routes->get('Auth/Login', 'Auth::login');
 $routes->get('Admin', 'Admin::index');
 
 $routes->get('auth/LogOut', 'Auth::LogOut');
-
 $routes->get('home', 'Home::index');
+
+$routes->get('kontak', 'Kontak::index');
+$routes->get('tentang', 'Tentang::index');
+$routes->get('peta', 'Peta::index');

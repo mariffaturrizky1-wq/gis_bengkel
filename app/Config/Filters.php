@@ -30,7 +30,7 @@ class Filters extends BaseFilters
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
         
-        // 1. DIUBAH: Menggunakan namespace standard filter CI4
+        // Menggunakan namespace standard filter CI4
         'filterauth'    => \App\Filters\FilterAuth::class, 
     ];
 
@@ -55,11 +55,13 @@ class Filters extends BaseFilters
      */
     public array $globals = [
         'before' => [
-            // 2. DIUBAH: Dari 'FilterAuth' menjadi 'filterauth' (huruf kecil semua)
             'filterauth' => [
                 'except' => [
-                    'Auth', 'Auth/*',
-                    'Home', 'Home/*',
+                    'auth', 'auth/*',
+                    'home', 'home/*',
+                    'kontak', 'kontak/*',
+                    'tentang', 'tentang/*',
+                    'peta', 'peta/*' // <-- Mengizinkan halaman peta diakses sebelum login
                 ]
             ]
         ],
@@ -67,13 +69,16 @@ class Filters extends BaseFilters
             'toolbar',
             'filterauth' => [
                 'except' => [
-                    'Auth', 'Auth/*',
-                    'Admin', 'Admin/*',
-                    'Home', 'Home/*',
-                    'Wilayah', 'Wilayah/*',
-                    'Kategori', 'Kategori/*',
-                    'Bengkel', 'Bengkel/*',
-                    'User', 'User/*',
+                    'auth', 'auth/*',
+                    'admin', 'admin/*',
+                    'home', 'home/*',
+                    'wilayah', 'wilayah/*',
+                    'kategori', 'kategori/*',
+                    'bengkel', 'bengkel/*',
+                    'user', 'user/*',
+                    'kontak', 'kontak/*',
+                    'tentang', 'tentang/*',
+                    'peta', 'peta/*' // <-- Mengizinkan halaman peta diakses setelah login agar tidak bentrok
                 ]
             ],
         ],
