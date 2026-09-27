@@ -9,8 +9,8 @@ class Kontak extends BaseController
         $data = [
             'title'    => 'Kontak & Bantuan - GIS Bengkel Online',
             'subtitle' => 'Hubungi Administrator dan Tim Teknis Sistem Informasi Geografis Bengkel',
-            'email'    => 'support@gisbengkel.com',
-            'telepon'  => '0812-3456-7890',
+            'email'    => 'naufalfajar@gisbengkel.com',
+            'telepon'  => '0813-2633-2541',
             'jam_kerja'=> 'Senin - Sabtu (08.00 - 17.00 WIB)',
             'alamat'   => 'Jl. Teknokrat No. 45, Kota Pusat Data'
         ];
