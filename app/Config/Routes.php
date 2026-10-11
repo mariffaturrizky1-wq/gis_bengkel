@@ -58,4 +58,5 @@ $routes->get('peta', 'Peta::index');
 // API Bengkel
 $routes->get('api/bengkel', 'Api\Bengkel::index');
 $routes->get('api/bengkel/peta', 'Api\Bengkel::peta');
+$routes->get('api/bengkel/terdekat', 'Api\Bengkel::terdekat');
 $routes->get('api/bengkel/(:num)', 'Api\Bengkel::show/$1');
