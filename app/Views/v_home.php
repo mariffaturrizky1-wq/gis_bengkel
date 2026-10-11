@@ -61,7 +61,6 @@ $Bengkel = $Bengkel ?? [];
 .bk-legend-head span{ flex:1; }
 .bk-legend-body{ padding:8px 10px; max-height:260px; overflow-y:auto; }
 .bk-legend-item{ display:flex; align-items:center; gap:8px; padding:5px 2px; font-size:.8rem; }
-.bk-legend-item img{ width:18px; height:18px; object-fit:contain; }
 .bk-legend-item label{ margin:0; flex:1; cursor:pointer; color:var(--bk-ink); }
 .bk-legend-empty{ font-size:.78rem; color:var(--bk-ink-soft); padding:6px 2px; font-style:italic; }
 
@@ -96,9 +95,7 @@ $Bengkel = $Bengkel ?? [];
     font-size:.8rem; font-weight:700; border-radius:12px 12px 0 0;
     display:flex; align-items:center; justify-content:space-between;
 }
-.bk-nearby-close{
-    cursor:pointer; opacity:.7; font-size:.9rem; line-height:1;
-}
+.bk-nearby-close{ cursor:pointer; opacity:.7; font-size:.9rem; line-height:1; }
 .bk-nearby-close:hover{ opacity:1; }
 .bk-nearby-item{
     padding:9px 12px; border-bottom:1px solid var(--bk-border);
@@ -200,45 +197,47 @@ L.control.scale({ imperial: false }).addTo(map);
     }).bindPopup("<b><?= $value['nama_wilayah'] ?></b>").addTo(map);
 <?php } ?>
 
-// ---- Helper: tebak file marker dari nama/kategori ----
-function tebaKMarker(namaBengkel, kategori) {
+// ---- Helper: tebak kategori dari nama bengkel ----
+function tebaKategori(kategori, namaBengkel) {
+    var kat  = (kategori    || '').toLowerCase();
     var nama = (namaBengkel || '').toLowerCase();
-    var kat  = (kategori   || '').toLowerCase();
 
-    // Cek kategori dulu (lebih reliable)
-    if (kat.includes('motor'))  return 'motor.png';
-    if (kat.includes('mobil'))  return 'mobil.png';
-    if (kat.includes('truk') || kat.includes('truck')) return 'mobil.png';
+    // Kalau sudah ada dan bukan lainnya, pakai langsung
+    if (kat && kat !== 'lainnya') return kategori.toUpperCase();
 
-    // Fallback tebak dari nama
-    if (nama.includes('motor'))  return 'motor.png';
-    if (nama.includes('mobil'))  return 'mobil.png';
-    if (nama.includes(' ac ')  || nama.endsWith(' ac')) return 'mobil.png';
-    if (nama.includes('sparepart') || nama.includes('variasi')) return 'motor.png';
+    // Tebak dari nama bengkel
+    if (nama.includes('motor') || nama.includes('sparepart') || nama.includes('variasi')) return 'MOTOR';
+    if (nama.includes('mobil') || nama.includes(' ac') || nama.includes('truk')) return 'MOBIL';
 
-    return null; // benar-benar tidak bisa ditebak
+    return 'Lainnya';
+}
+
+// ---- Helper: tebak file marker ----
+function tebaMarker(markerFile, namaBengkel, kategori) {
+    if (markerFile) return markerFile;
+
+    var kat  = (kategori    || '').toLowerCase();
+    var nama = (namaBengkel || '').toLowerCase();
+
+    if (kat.includes('motor') || nama.includes('motor') || nama.includes('sparepart') || nama.includes('variasi')) return 'motor.png';
+    if (kat.includes('mobil') || nama.includes('mobil') || nama.includes(' ac') || nama.includes('truk')) return 'mobil.png';
+
+    return null;
 }
 
 // ---- Helper: buat Leaflet icon ----
 function bkIcon(markerFile, namaBengkel, kategori) {
-    // Kalau marker dari DB ada, pakai langsung
-    var file = markerFile;
-
-    // Kalau null/kosong, coba tebak
-    if (!file) {
-        file = tebaKMarker(namaBengkel, kategori);
-    }
+    var file = tebaMarker(markerFile, namaBengkel, kategori);
 
     if (file) {
-        return L.icon({
-            iconUrl: '<?= base_url('marker/') ?>' + file,
-            iconSize: [32, 32],
-            iconAnchor: [16, 32],
-            popupAnchor: [0, -28]
-        });
-    }
-
-    // Benar-benar tidak ada → pin fallback
+    return L.icon({
+        iconUrl: '<?= base_url('marker/') ?>' + file,
+        iconSize: [48, 48],     // ubah dari [32, 32]
+        iconAnchor: [24, 48],   // selalu setengah dari iconSize
+        popupAnchor: [0, -44]   // sedikit di atas marker
+    });
+}
+    // Fallback pin
     return L.divIcon({
         html: '<div class="bk-pin-fallback"></div>',
         className: '',
@@ -256,7 +255,10 @@ var allMarkers = [];
 bengkelData.forEach(function(b) {
     if (!b.latitude || !b.longitude) return;
 
-    var kategoriName = b.kategori || 'Lainnya';
+    var kategoriName = tebaKategori(b.kategori, b.nama_bengkel);
+
+    // Skip bengkel yang tidak bisa dikategorikan (Lainnya)
+    if (kategoriName === 'Lainnya') return;
 
     if (!kategoriLayers[kategoriName]) {
         kategoriLayers[kategoriName] = L.layerGroup().addTo(map);
@@ -279,7 +281,7 @@ bengkelData.forEach(function(b) {
 });
 
 // ---- Legend / filter panel ----
-var legendBody  = document.getElementById('bkLegendBody');
+var legendBody   = document.getElementById('bkLegendBody');
 var kategoriKeys = Object.keys(kategoriLayers);
 
 if (kategoriKeys.length === 0) {
