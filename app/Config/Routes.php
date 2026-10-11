@@ -54,3 +54,8 @@ $routes->get('home', 'Home::index');
 $routes->get('kontak', 'Kontak::index');
 $routes->get('tentang', 'Tentang::index');
 $routes->get('peta', 'Peta::index');
+
+// API Bengkel
+$routes->get('api/bengkel', 'Api\Bengkel::index');
+$routes->get('api/bengkel/peta', 'Api\Bengkel::peta');
+$routes->get('api/bengkel/(:num)', 'Api\Bengkel::show/$1');

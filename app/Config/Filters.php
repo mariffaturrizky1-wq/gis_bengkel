@@ -54,35 +54,37 @@ class Filters extends BaseFilters
      * applied before and after every request.
      */
     public array $globals = [
-        'before' => [
-            'filterauth' => [
-                'except' => [
-                    'auth', 'auth/*',
-                    'home', 'home/*',
-                    'kontak', 'kontak/*',
-                    'tentang', 'tentang/*',
-                    'peta', 'peta/*' // <-- Mengizinkan halaman peta diakses sebelum login
-                ]
+    'before' => [
+        'filterauth' => [
+            'except' => [
+                'auth', 'auth/*',
+                'home', 'home/*',
+                'kontak', 'kontak/*',
+                'tentang', 'tentang/*',
+                'peta', 'peta/*',
+                'api', 'api/*', // ← tambahkan ini
+            ]
+        ]
+    ],
+    'after' => [
+        'toolbar',
+        'filterauth' => [
+            'except' => [
+                'auth', 'auth/*',
+                'admin', 'admin/*',
+                'home', 'home/*',
+                'wilayah', 'wilayah/*',
+                'kategori', 'kategori/*',
+                'bengkel', 'bengkel/*',
+                'user', 'user/*',
+                'kontak', 'kontak/*',
+                'tentang', 'tentang/*',
+                'peta', 'peta/*',
+                'api', 'api/*', // ← tambahkan ini
             ]
         ],
-        'after' => [
-            'toolbar',
-            'filterauth' => [
-                'except' => [
-                    'auth', 'auth/*',
-                    'admin', 'admin/*',
-                    'home', 'home/*',
-                    'wilayah', 'wilayah/*',
-                    'kategori', 'kategori/*',
-                    'bengkel', 'bengkel/*',
-                    'user', 'user/*',
-                    'kontak', 'kontak/*',
-                    'tentang', 'tentang/*',
-                    'peta', 'peta/*' // <-- Mengizinkan halaman peta diakses setelah login agar tidak bentrok
-                ]
-            ],
-        ],
-    ];
+    ],
+];
 
     public array $methods = [];
 
